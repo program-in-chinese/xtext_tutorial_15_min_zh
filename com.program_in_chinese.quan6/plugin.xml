@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+	<extension point="org.eclipse.emf.ecore.generated_package">
+		<package 
+			uri = "http://www.program_in_chinese.com/quan6/Quan6"
+			class = "com.program_in_chinese.quan6.quan6.Quan6Package"
+			genModel = "model/generated/Quan6.genmodel" />
+	</extension>
+</plugin>

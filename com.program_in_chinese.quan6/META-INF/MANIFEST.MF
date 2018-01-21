@@ -7,5 +7,25 @@ Bundle-SymbolicName: com.program_in_chinese.quan6; singleton:=true
 Bundle-ActivationPolicy: lazy
 Require-Bundle: org.eclipse.xtext,
  org.eclipse.xtext.xbase,
- org.eclipse.equinox.common;bundle-version="3.5.0"
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.common.types,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.13.0",
+ org.antlr.runtime,
+ org.objectweb.asm;bundle-version="[5.0.1,6.0.0)";resolution:=optional,
+ org.eclipse.xtext.util,
+ org.eclipse.emf.common,
+ org.eclipse.xtend.lib;bundle-version="2.13.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: com.program_in_chinese.quan6.quan6,
+ com.program_in_chinese.quan6.quan6.impl,
+ com.program_in_chinese.quan6.parser.antlr,
+ com.program_in_chinese.quan6.parser.antlr.internal,
+ com.program_in_chinese.quan6.scoping,
+ com.program_in_chinese.quan6.services,
+ com.program_in_chinese.quan6,
+ com.program_in_chinese.quan6.quan6.util,
+ com.program_in_chinese.quan6.validation,
+ com.program_in_chinese.quan6.serializer,
+ com.program_in_chinese.quan6.jvmmodel
+Import-Package: org.apache.log4j
