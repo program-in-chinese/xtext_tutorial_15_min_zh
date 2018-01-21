@@ -31,3 +31,10 @@ Operation:
         (',' params+=FullJvmFormalParameter)*)?')'
         ':' type=JvmTypeReference 
     body=XBlockExpression;
+
+@Override
+ValidID:
+	IDENTIFIER;
+	
+terminal IDENTIFIER:
+	'^'?('\u4E00'..'\u9FA5'|'\uF900'..'\uFA2D'|'a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'_'|'0'..'9'|'\u4E00'..'\u9FA5'|'\uF900'..'\uFA2D')*;

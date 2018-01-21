@@ -301,6 +301,17 @@ public class Quan6GrammarAccess extends AbstractGrammarElementFinder {
 		//XBlockExpression
 		public RuleCall getBodyXBlockExpressionParserRuleCall_7_0() { return cBodyXBlockExpressionParserRuleCall_7_0; }
 	}
+	public class ValidIDElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "com.program_in_chinese.quan6.Quan6.ValidID");
+		private final RuleCall cIDENTIFIERTerminalRuleCall = (RuleCall)rule.eContents().get(1);
+		
+		//@ Override ValidID:
+		//	IDENTIFIER;
+		@Override public ParserRule getRule() { return rule; }
+		
+		//IDENTIFIER
+		public RuleCall getIDENTIFIERTerminalRuleCall() { return cIDENTIFIERTerminalRuleCall; }
+	}
 	
 	
 	private final Quan6Elements pQuan6;
@@ -310,6 +321,8 @@ public class Quan6GrammarAccess extends AbstractGrammarElementFinder {
 	private final FeatureElements pFeature;
 	private final PropertyElements pProperty;
 	private final OperationElements pOperation;
+	private final ValidIDElements pValidID;
+	private final TerminalRule tIDENTIFIER;
 	
 	private final Grammar grammar;
 	
@@ -331,6 +344,8 @@ public class Quan6GrammarAccess extends AbstractGrammarElementFinder {
 		this.pFeature = new FeatureElements();
 		this.pProperty = new PropertyElements();
 		this.pOperation = new OperationElements();
+		this.pValidID = new ValidIDElements();
+		this.tIDENTIFIER = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "com.program_in_chinese.quan6.Quan6.IDENTIFIER");
 	}
 	
 	protected Grammar internalFindGrammar(GrammarProvider grammarProvider) {
@@ -440,6 +455,23 @@ public class Quan6GrammarAccess extends AbstractGrammarElementFinder {
 	
 	public ParserRule getOperationRule() {
 		return getOperationAccess().getRule();
+	}
+	
+	//@ Override ValidID:
+	//	IDENTIFIER;
+	public ValidIDElements getValidIDAccess() {
+		return pValidID;
+	}
+	
+	public ParserRule getValidIDRule() {
+		return getValidIDAccess().getRule();
+	}
+	
+	//terminal IDENTIFIER:
+	//	'^'? ('\\u4E00'..'\\u9FA5' | '\\uF900'..'\\uFA2D' | 'a'..'z' | 'A'..'Z' | '_') ('a'..'z' | 'A'..'Z' | '_' | '0'..'9' |
+	//	'\\u4E00'..'\\u9FA5' | '\\uF900'..'\\uFA2D')*;
+	public TerminalRule getIDENTIFIERRule() {
+		return tIDENTIFIER;
 	}
 	
 	//XExpression:
@@ -915,8 +947,8 @@ public class Quan6GrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//XVariableDeclaration XExpression:
-	//	{XVariableDeclaration} (writeable?='var' | 'val') (=> (type=JvmTypeReference name=ValidID) | name=ValidID) ('='
-	//	right=XExpression)?;
+	//	{XVariableDeclaration} (writeable?='var' | 'val') (=> (type=JvmTypeReference name=super::ValidID) |
+	//	name=super::ValidID) ('=' right=XExpression)?;
 	public XbaseGrammarAccess.XVariableDeclarationElements getXVariableDeclarationAccess() {
 		return gaXbase.getXVariableDeclarationAccess();
 	}
@@ -926,7 +958,7 @@ public class Quan6GrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//JvmFormalParameter types::JvmFormalParameter:
-	//	parameterType=JvmTypeReference? name=ValidID;
+	//	parameterType=JvmTypeReference? name=super::ValidID;
 	public XbaseGrammarAccess.JvmFormalParameterElements getJvmFormalParameterAccess() {
 		return gaXbase.getJvmFormalParameterAccess();
 	}
@@ -936,7 +968,7 @@ public class Quan6GrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//FullJvmFormalParameter types::JvmFormalParameter:
-	//	parameterType=JvmTypeReference name=ValidID;
+	//	parameterType=JvmTypeReference name=super::ValidID;
 	public XbaseGrammarAccess.FullJvmFormalParameterElements getFullJvmFormalParameterAccess() {
 		return gaXbase.getFullJvmFormalParameterAccess();
 	}
@@ -960,7 +992,7 @@ public class Quan6GrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//FeatureCallID:
-	//	ValidID | 'extends' | 'static' | 'import' | 'extension';
+	//	super::ValidID | 'extends' | 'static' | 'import' | 'extension';
 	public XbaseGrammarAccess.FeatureCallIDElements getFeatureCallIDAccess() {
 		return gaXbase.getFeatureCallIDAccess();
 	}
@@ -1099,7 +1131,7 @@ public class Quan6GrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//@ Override QualifiedName:
-	//	ValidID (=> '.' ValidID)*;
+	//	super::ValidID (=> '.' super::ValidID)*;
 	public XbaseGrammarAccess.QualifiedNameElements getQualifiedNameAccess() {
 		return gaXbase.getQualifiedNameAccess();
 	}
@@ -1122,7 +1154,7 @@ public class Quan6GrammarAccess extends AbstractGrammarElementFinder {
 	// * Dummy rule, for "better" downwards compatibility, since GrammarAccess generates non-static inner classes,
 	// * which makes downstream grammars break on classloading, when a rule is removed.
 	// */ StaticQualifier:
-	//	(ValidID '::')+;
+	//	(super::ValidID '::')+;
 	public XbaseGrammarAccess.StaticQualifierElements getStaticQualifierAccess() {
 		return gaXbase.getStaticQualifierAccess();
 	}
@@ -1182,8 +1214,9 @@ public class Quan6GrammarAccess extends AbstractGrammarElementFinder {
 	
 	//JvmParameterizedTypeReference:
 	//	type=[JvmType|super::QualifiedName] (=> '<' arguments+=JvmArgumentTypeReference (','
-	//	arguments+=JvmArgumentTypeReference)* '>' (=> ({JvmInnerTypeReference.outer=current} '.') type=[JvmType|ValidID] (=>
-	//	'<' arguments+=JvmArgumentTypeReference (',' arguments+=JvmArgumentTypeReference)* '>')?)*)?;
+	//	arguments+=JvmArgumentTypeReference)* '>' (=> ({JvmInnerTypeReference.outer=current} '.')
+	//	type=[JvmType|super::ValidID] (=> '<' arguments+=JvmArgumentTypeReference (',' arguments+=JvmArgumentTypeReference)*
+	//	'>')?)*)?;
 	public XtypeGrammarAccess.JvmParameterizedTypeReferenceElements getJvmParameterizedTypeReferenceAccess() {
 		return gaXtype.getJvmParameterizedTypeReferenceAccess();
 	}
@@ -1254,7 +1287,7 @@ public class Quan6GrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//JvmTypeParameter:
-	//	name=ValidID (constraints+=JvmUpperBound constraints+=JvmUpperBoundAnded*)?;
+	//	name=super::ValidID (constraints+=JvmUpperBound constraints+=JvmUpperBoundAnded*)?;
 	public XtypeGrammarAccess.JvmTypeParameterElements getJvmTypeParameterAccess() {
 		return gaXtype.getJvmTypeParameterAccess();
 	}
@@ -1273,16 +1306,6 @@ public class Quan6GrammarAccess extends AbstractGrammarElementFinder {
 		return getQualifiedNameWithWildcardAccess().getRule();
 	}
 	
-	//ValidID:
-	//	ID;
-	public XtypeGrammarAccess.ValidIDElements getValidIDAccess() {
-		return gaXtype.getValidIDAccess();
-	}
-	
-	public ParserRule getValidIDRule() {
-		return getValidIDAccess().getRule();
-	}
-	
 	//XImportSection:
 	//	importDeclarations+=XImportDeclaration+;
 	public XtypeGrammarAccess.XImportSectionElements getXImportSectionAccess() {
@@ -1295,7 +1318,7 @@ public class Quan6GrammarAccess extends AbstractGrammarElementFinder {
 	
 	//XImportDeclaration:
 	//	'import' (static?='static' extension?='extension'? importedType=[JvmDeclaredType|QualifiedNameInStaticImport]
-	//	(wildcard?='*' | memberName=ValidID) | importedType=[JvmDeclaredType|super::QualifiedName] |
+	//	(wildcard?='*' | memberName=super::ValidID) | importedType=[JvmDeclaredType|super::QualifiedName] |
 	//	importedNamespace=QualifiedNameWithWildcard) ';'?;
 	public XtypeGrammarAccess.XImportDeclarationElements getXImportDeclarationAccess() {
 		return gaXtype.getXImportDeclarationAccess();
@@ -1306,7 +1329,7 @@ public class Quan6GrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//QualifiedNameInStaticImport:
-	//	(ValidID '.')+;
+	//	(super::ValidID '.')+;
 	public XtypeGrammarAccess.QualifiedNameInStaticImportElements getQualifiedNameInStaticImportAccess() {
 		return gaXtype.getQualifiedNameInStaticImportAccess();
 	}

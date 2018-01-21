@@ -256,7 +256,7 @@ ruleEntity returns [EObject current=null]
 						$current,
 						"name",
 						lv_name_1_0,
-						"org.eclipse.xtext.xbase.Xtype.ValidID");
+						"com.program_in_chinese.quan6.Quan6.ValidID");
 					afterParserOrEnumRuleCall();
 				}
 			)
@@ -382,7 +382,7 @@ ruleProperty returns [EObject current=null]
 						$current,
 						"name",
 						lv_name_0_0,
-						"org.eclipse.xtext.xbase.Xtype.ValidID");
+						"com.program_in_chinese.quan6.Quan6.ValidID");
 					afterParserOrEnumRuleCall();
 				}
 			)
@@ -447,7 +447,7 @@ ruleOperation returns [EObject current=null]
 						$current,
 						"name",
 						lv_name_1_0,
-						"org.eclipse.xtext.xbase.Xtype.ValidID");
+						"com.program_in_chinese.quan6.Quan6.ValidID");
 					afterParserOrEnumRuleCall();
 				}
 			)
@@ -549,6 +549,30 @@ ruleOperation returns [EObject current=null]
 			)
 		)
 	)
+;
+
+// Entry rule entryRuleValidID
+entryRuleValidID returns [String current=null]:
+	{ newCompositeNode(grammarAccess.getValidIDRule()); }
+	iv_ruleValidID=ruleValidID
+	{ $current=$iv_ruleValidID.current.getText(); }
+	EOF;
+
+// Rule ValidID
+ruleValidID returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
+@init {
+	enterRule();
+}
+@after {
+	leaveRule();
+}:
+	this_IDENTIFIER_0=RULE_IDENTIFIER
+	{
+		$current.merge(this_IDENTIFIER_0);
+	}
+	{
+		newLeafNode(this_IDENTIFIER_0, grammarAccess.getValidIDAccess().getIDENTIFIERTerminalRuleCall());
+	}
 ;
 
 // Entry rule entryRuleXExpression
@@ -4399,7 +4423,7 @@ ruleXVariableDeclaration returns [EObject current=null]
 									$current,
 									"name",
 									lv_name_4_0,
-									"org.eclipse.xtext.xbase.Xtype.ValidID");
+									"com.program_in_chinese.quan6.Quan6.ValidID");
 								afterParserOrEnumRuleCall();
 							}
 						)
@@ -4421,7 +4445,7 @@ ruleXVariableDeclaration returns [EObject current=null]
 							$current,
 							"name",
 							lv_name_5_0,
-							"org.eclipse.xtext.xbase.Xtype.ValidID");
+							"com.program_in_chinese.quan6.Quan6.ValidID");
 						afterParserOrEnumRuleCall();
 					}
 				)
@@ -4504,7 +4528,7 @@ ruleJvmFormalParameter returns [EObject current=null]
 						$current,
 						"name",
 						lv_name_1_0,
-						"org.eclipse.xtext.xbase.Xtype.ValidID");
+						"com.program_in_chinese.quan6.Quan6.ValidID");
 					afterParserOrEnumRuleCall();
 				}
 			)
@@ -4561,7 +4585,7 @@ ruleFullJvmFormalParameter returns [EObject current=null]
 						$current,
 						"name",
 						lv_name_1_0,
-						"org.eclipse.xtext.xbase.Xtype.ValidID");
+						"com.program_in_chinese.quan6.Quan6.ValidID");
 					afterParserOrEnumRuleCall();
 				}
 			)
@@ -5456,7 +5480,7 @@ ruleXReturnExpression returns [EObject current=null]
 			newLeafNode(otherlv_1, grammarAccess.getXReturnExpressionAccess().getReturnKeyword_1());
 		}
 		(
-			('extends' | 'static' | 'import' | 'extension' | '!' | '-' | '+' | 'new' | '{' | 'switch' | 'synchronized' | '<' | 'super' | '#' | '[' | 'false' | 'true' | 'null' | 'typeof' | 'if' | 'for' | 'while' | 'do' | 'throw' | 'return' | 'try' | '(' | RULE_ID | RULE_HEX | RULE_INT | RULE_DECIMAL | RULE_STRING)=>
+			('extends' | 'static' | 'import' | 'extension' | '!' | '-' | '+' | 'new' | '{' | 'switch' | 'synchronized' | '<' | 'super' | '#' | '[' | 'false' | 'true' | 'null' | 'typeof' | 'if' | 'for' | 'while' | 'do' | 'throw' | 'return' | 'try' | '(' | RULE_IDENTIFIER | RULE_HEX | RULE_INT | RULE_DECIMAL | RULE_STRING)=>
 			(
 				{
 					newCompositeNode(grammarAccess.getXReturnExpressionAccess().getExpressionXExpressionParserRuleCall_2_0());
@@ -6625,30 +6649,6 @@ ruleQualifiedNameWithWildcard returns [AntlrDatatypeRuleToken current=new AntlrD
 	)
 ;
 
-// Entry rule entryRuleValidID
-entryRuleValidID returns [String current=null]:
-	{ newCompositeNode(grammarAccess.getValidIDRule()); }
-	iv_ruleValidID=ruleValidID
-	{ $current=$iv_ruleValidID.current.getText(); }
-	EOF;
-
-// Rule ValidID
-ruleValidID returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
-	this_ID_0=RULE_ID
-	{
-		$current.merge(this_ID_0);
-	}
-	{
-		newLeafNode(this_ID_0, grammarAccess.getValidIDAccess().getIDTerminalRuleCall());
-	}
-;
-
 // Entry rule entryRuleXImportSection
 entryRuleXImportSection returns [EObject current=null]:
 	{ newCompositeNode(grammarAccess.getXImportSectionRule()); }
@@ -6781,7 +6781,7 @@ ruleXImportDeclaration returns [EObject current=null]
 									$current,
 									"memberName",
 									lv_memberName_5_0,
-									"org.eclipse.xtext.xbase.Xtype.ValidID");
+									"com.program_in_chinese.quan6.Quan6.ValidID");
 								afterParserOrEnumRuleCall();
 							}
 						)
@@ -6868,6 +6868,8 @@ ruleQualifiedNameInStaticImport returns [AntlrDatatypeRuleToken current=new Antl
 		}
 	)+
 ;
+
+RULE_IDENTIFIER : '^'? ('\u4E00'..'\u9FA5'|'\uF900'..'\uFA2D'|'a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'_'|'0'..'9'|'\u4E00'..'\u9FA5'|'\uF900'..'\uFA2D')*;
 
 RULE_HEX : ('0x'|'0X') ('0'..'9'|'a'..'f'|'A'..'F'|'_')+ ('#' (('b'|'B') ('i'|'I')|('l'|'L')))?;
 
