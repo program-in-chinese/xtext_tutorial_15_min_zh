@@ -1,0 +1,9 @@
+grammar com.program_in_chinese.quan6.Quan6 with org.eclipse.xtext.common.Terminals
+
+generate quan6 "http://www.program_in_chinese.com/quan6/Quan6"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';
