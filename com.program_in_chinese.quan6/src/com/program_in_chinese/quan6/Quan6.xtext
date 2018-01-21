@@ -1,9 +1,9 @@
-grammar org.example.domainmodel.Domainmodel with
+grammar com.program_in_chinese.quan6.Quan6 with
                                       org.eclipse.xtext.xbase.Xbase
- 
-generate domainmodel "http://www.example.org/domainmodel/Domainmodel"
- 
-Domainmodel:
+
+generate quan6 "http://www.program_in_chinese.com/quan6/Quan6"
+
+Quan6:
     importSection=XImportSection?
     elements+=AbstractElement*;
  
