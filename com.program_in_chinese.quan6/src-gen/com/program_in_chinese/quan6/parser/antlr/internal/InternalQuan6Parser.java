@@ -22,10 +22,11 @@ import java.util.HashMap;
 @SuppressWarnings("all")
 public class InternalQuan6Parser extends AbstractInternalAntlrParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_HEX", "RULE_INT", "RULE_DECIMAL", "RULE_ID", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'package'", "'{'", "'}'", "'entity'", "'extends'", "':'", "'op'", "'('", "','", "')'", "'='", "'+='", "'-='", "'*='", "'/='", "'%='", "'<'", "'>'", "'>='", "'||'", "'&&'", "'=='", "'!='", "'==='", "'!=='", "'instanceof'", "'->'", "'..<'", "'..'", "'=>'", "'<>'", "'?:'", "'+'", "'-'", "'*'", "'**'", "'/'", "'%'", "'!'", "'as'", "'++'", "'--'", "'.'", "'::'", "'?.'", "'#'", "'['", "']'", "'|'", "';'", "'if'", "'else'", "'switch'", "'default'", "'case'", "'for'", "'while'", "'do'", "'var'", "'val'", "'static'", "'import'", "'extension'", "'super'", "'new'", "'false'", "'true'", "'null'", "'typeof'", "'throw'", "'return'", "'try'", "'finally'", "'synchronized'", "'catch'", "'?'", "'&'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_HEX", "RULE_INT", "RULE_DECIMAL", "RULE_ID", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'\\u5305'", "'{'", "'}'", "'\\u7C7B'", "'\\u6269\\u5C55'", "':'", "'\\u51FD\\u6570'", "'('", "','", "')'", "'='", "'+='", "'-='", "'*='", "'/='", "'%='", "'<'", "'>'", "'>='", "'||'", "'&&'", "'=='", "'!='", "'==='", "'!=='", "'instanceof'", "'->'", "'..<'", "'..'", "'=>'", "'<>'", "'?:'", "'+'", "'-'", "'*'", "'**'", "'/'", "'%'", "'!'", "'as'", "'++'", "'--'", "'.'", "'::'", "'?.'", "'#'", "'['", "']'", "'|'", "';'", "'if'", "'else'", "'switch'", "'default'", "'case'", "'for'", "'while'", "'do'", "'var'", "'val'", "'extends'", "'static'", "'import'", "'extension'", "'super'", "'new'", "'false'", "'true'", "'null'", "'typeof'", "'throw'", "'return'", "'try'", "'finally'", "'synchronized'", "'catch'", "'?'", "'&'"
     };
     public static final int RULE_HEX=5;
     public static final int T__50=50;
+    public static final int T__90=90;
     public static final int T__19=19;
     public static final int T__15=15;
     public static final int T__59=59;
@@ -215,7 +216,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
             int alt1=2;
             int LA1_0 = input.LA(1);
 
-            if ( (LA1_0==74) ) {
+            if ( (LA1_0==75) ) {
                 alt1=1;
             }
             switch (alt1) {
@@ -518,7 +519,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "rulePackageDeclaration"
-    // InternalQuan6.g:164:1: rulePackageDeclaration returns [EObject current=null] : (otherlv_0= 'package' ( (lv_name_1_0= ruleQualifiedName ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleAbstractElement ) )* otherlv_4= '}' ) ;
+    // InternalQuan6.g:164:1: rulePackageDeclaration returns [EObject current=null] : (otherlv_0= '\\u5305' ( (lv_name_1_0= ruleQualifiedName ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleAbstractElement ) )* otherlv_4= '}' ) ;
     public final EObject rulePackageDeclaration() throws RecognitionException {
         EObject current = null;
 
@@ -534,16 +535,16 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalQuan6.g:170:2: ( (otherlv_0= 'package' ( (lv_name_1_0= ruleQualifiedName ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleAbstractElement ) )* otherlv_4= '}' ) )
-            // InternalQuan6.g:171:2: (otherlv_0= 'package' ( (lv_name_1_0= ruleQualifiedName ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleAbstractElement ) )* otherlv_4= '}' )
+            // InternalQuan6.g:170:2: ( (otherlv_0= '\\u5305' ( (lv_name_1_0= ruleQualifiedName ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleAbstractElement ) )* otherlv_4= '}' ) )
+            // InternalQuan6.g:171:2: (otherlv_0= '\\u5305' ( (lv_name_1_0= ruleQualifiedName ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleAbstractElement ) )* otherlv_4= '}' )
             {
-            // InternalQuan6.g:171:2: (otherlv_0= 'package' ( (lv_name_1_0= ruleQualifiedName ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleAbstractElement ) )* otherlv_4= '}' )
-            // InternalQuan6.g:172:3: otherlv_0= 'package' ( (lv_name_1_0= ruleQualifiedName ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleAbstractElement ) )* otherlv_4= '}'
+            // InternalQuan6.g:171:2: (otherlv_0= '\\u5305' ( (lv_name_1_0= ruleQualifiedName ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleAbstractElement ) )* otherlv_4= '}' )
+            // InternalQuan6.g:172:3: otherlv_0= '\\u5305' ( (lv_name_1_0= ruleQualifiedName ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleAbstractElement ) )* otherlv_4= '}'
             {
             otherlv_0=(Token)match(input,13,FOLLOW_4); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
-              			newLeafNode(otherlv_0, grammarAccess.getPackageDeclarationAccess().getPackageKeyword_0());
+              			newLeafNode(otherlv_0, grammarAccess.getPackageDeclarationAccess().getCjkUnifiedIdeograph5305Keyword_0());
               		
             }
             // InternalQuan6.g:176:3: ( (lv_name_1_0= ruleQualifiedName ) )
@@ -711,7 +712,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleEntity"
-    // InternalQuan6.g:233:1: ruleEntity returns [EObject current=null] : (otherlv_0= 'entity' ( (lv_name_1_0= ruleValidID ) ) (otherlv_2= 'extends' ( (lv_superType_3_0= ruleJvmTypeReference ) ) )? otherlv_4= '{' ( (lv_features_5_0= ruleFeature ) )* otherlv_6= '}' ) ;
+    // InternalQuan6.g:233:1: ruleEntity returns [EObject current=null] : (otherlv_0= '\\u7C7B' ( (lv_name_1_0= ruleValidID ) ) (otherlv_2= '\\u6269\\u5C55' ( (lv_superType_3_0= ruleJvmTypeReference ) ) )? otherlv_4= '{' ( (lv_features_5_0= ruleFeature ) )* otherlv_6= '}' ) ;
     public final EObject ruleEntity() throws RecognitionException {
         EObject current = null;
 
@@ -730,16 +731,16 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalQuan6.g:239:2: ( (otherlv_0= 'entity' ( (lv_name_1_0= ruleValidID ) ) (otherlv_2= 'extends' ( (lv_superType_3_0= ruleJvmTypeReference ) ) )? otherlv_4= '{' ( (lv_features_5_0= ruleFeature ) )* otherlv_6= '}' ) )
-            // InternalQuan6.g:240:2: (otherlv_0= 'entity' ( (lv_name_1_0= ruleValidID ) ) (otherlv_2= 'extends' ( (lv_superType_3_0= ruleJvmTypeReference ) ) )? otherlv_4= '{' ( (lv_features_5_0= ruleFeature ) )* otherlv_6= '}' )
+            // InternalQuan6.g:239:2: ( (otherlv_0= '\\u7C7B' ( (lv_name_1_0= ruleValidID ) ) (otherlv_2= '\\u6269\\u5C55' ( (lv_superType_3_0= ruleJvmTypeReference ) ) )? otherlv_4= '{' ( (lv_features_5_0= ruleFeature ) )* otherlv_6= '}' ) )
+            // InternalQuan6.g:240:2: (otherlv_0= '\\u7C7B' ( (lv_name_1_0= ruleValidID ) ) (otherlv_2= '\\u6269\\u5C55' ( (lv_superType_3_0= ruleJvmTypeReference ) ) )? otherlv_4= '{' ( (lv_features_5_0= ruleFeature ) )* otherlv_6= '}' )
             {
-            // InternalQuan6.g:240:2: (otherlv_0= 'entity' ( (lv_name_1_0= ruleValidID ) ) (otherlv_2= 'extends' ( (lv_superType_3_0= ruleJvmTypeReference ) ) )? otherlv_4= '{' ( (lv_features_5_0= ruleFeature ) )* otherlv_6= '}' )
-            // InternalQuan6.g:241:3: otherlv_0= 'entity' ( (lv_name_1_0= ruleValidID ) ) (otherlv_2= 'extends' ( (lv_superType_3_0= ruleJvmTypeReference ) ) )? otherlv_4= '{' ( (lv_features_5_0= ruleFeature ) )* otherlv_6= '}'
+            // InternalQuan6.g:240:2: (otherlv_0= '\\u7C7B' ( (lv_name_1_0= ruleValidID ) ) (otherlv_2= '\\u6269\\u5C55' ( (lv_superType_3_0= ruleJvmTypeReference ) ) )? otherlv_4= '{' ( (lv_features_5_0= ruleFeature ) )* otherlv_6= '}' )
+            // InternalQuan6.g:241:3: otherlv_0= '\\u7C7B' ( (lv_name_1_0= ruleValidID ) ) (otherlv_2= '\\u6269\\u5C55' ( (lv_superType_3_0= ruleJvmTypeReference ) ) )? otherlv_4= '{' ( (lv_features_5_0= ruleFeature ) )* otherlv_6= '}'
             {
             otherlv_0=(Token)match(input,16,FOLLOW_4); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
-              			newLeafNode(otherlv_0, grammarAccess.getEntityAccess().getEntityKeyword_0());
+              			newLeafNode(otherlv_0, grammarAccess.getEntityAccess().getCjkUnifiedIdeograph7c7bKeyword_0());
               		
             }
             // InternalQuan6.g:245:3: ( (lv_name_1_0= ruleValidID ) )
@@ -777,7 +778,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalQuan6.g:264:3: (otherlv_2= 'extends' ( (lv_superType_3_0= ruleJvmTypeReference ) ) )?
+            // InternalQuan6.g:264:3: (otherlv_2= '\\u6269\\u5C55' ( (lv_superType_3_0= ruleJvmTypeReference ) ) )?
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -786,12 +787,12 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
             }
             switch (alt5) {
                 case 1 :
-                    // InternalQuan6.g:265:4: otherlv_2= 'extends' ( (lv_superType_3_0= ruleJvmTypeReference ) )
+                    // InternalQuan6.g:265:4: otherlv_2= '\\u6269\\u5C55' ( (lv_superType_3_0= ruleJvmTypeReference ) )
                     {
                     otherlv_2=(Token)match(input,17,FOLLOW_8); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
-                      				newLeafNode(otherlv_2, grammarAccess.getEntityAccess().getExtendsKeyword_2_0());
+                      				newLeafNode(otherlv_2, grammarAccess.getEntityAccess().getCjkUnifiedIdeograph6269CjkUnifiedIdeograph5c55Keyword_2_0());
                       			
                     }
                     // InternalQuan6.g:269:4: ( (lv_superType_3_0= ruleJvmTypeReference ) )
@@ -1269,7 +1270,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleOperation"
-    // InternalQuan6.g:424:1: ruleOperation returns [EObject current=null] : (otherlv_0= 'op' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= '(' ( ( (lv_params_3_0= ruleFullJvmFormalParameter ) ) (otherlv_4= ',' ( (lv_params_5_0= ruleFullJvmFormalParameter ) ) )* )? otherlv_6= ')' otherlv_7= ':' ( (lv_type_8_0= ruleJvmTypeReference ) ) ( (lv_body_9_0= ruleXBlockExpression ) ) ) ;
+    // InternalQuan6.g:424:1: ruleOperation returns [EObject current=null] : (otherlv_0= '\\u51FD\\u6570' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= '(' ( ( (lv_params_3_0= ruleFullJvmFormalParameter ) ) (otherlv_4= ',' ( (lv_params_5_0= ruleFullJvmFormalParameter ) ) )* )? otherlv_6= ')' otherlv_7= ':' ( (lv_type_8_0= ruleJvmTypeReference ) ) ( (lv_body_9_0= ruleXBlockExpression ) ) ) ;
     public final EObject ruleOperation() throws RecognitionException {
         EObject current = null;
 
@@ -1293,16 +1294,16 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalQuan6.g:430:2: ( (otherlv_0= 'op' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= '(' ( ( (lv_params_3_0= ruleFullJvmFormalParameter ) ) (otherlv_4= ',' ( (lv_params_5_0= ruleFullJvmFormalParameter ) ) )* )? otherlv_6= ')' otherlv_7= ':' ( (lv_type_8_0= ruleJvmTypeReference ) ) ( (lv_body_9_0= ruleXBlockExpression ) ) ) )
-            // InternalQuan6.g:431:2: (otherlv_0= 'op' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= '(' ( ( (lv_params_3_0= ruleFullJvmFormalParameter ) ) (otherlv_4= ',' ( (lv_params_5_0= ruleFullJvmFormalParameter ) ) )* )? otherlv_6= ')' otherlv_7= ':' ( (lv_type_8_0= ruleJvmTypeReference ) ) ( (lv_body_9_0= ruleXBlockExpression ) ) )
+            // InternalQuan6.g:430:2: ( (otherlv_0= '\\u51FD\\u6570' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= '(' ( ( (lv_params_3_0= ruleFullJvmFormalParameter ) ) (otherlv_4= ',' ( (lv_params_5_0= ruleFullJvmFormalParameter ) ) )* )? otherlv_6= ')' otherlv_7= ':' ( (lv_type_8_0= ruleJvmTypeReference ) ) ( (lv_body_9_0= ruleXBlockExpression ) ) ) )
+            // InternalQuan6.g:431:2: (otherlv_0= '\\u51FD\\u6570' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= '(' ( ( (lv_params_3_0= ruleFullJvmFormalParameter ) ) (otherlv_4= ',' ( (lv_params_5_0= ruleFullJvmFormalParameter ) ) )* )? otherlv_6= ')' otherlv_7= ':' ( (lv_type_8_0= ruleJvmTypeReference ) ) ( (lv_body_9_0= ruleXBlockExpression ) ) )
             {
-            // InternalQuan6.g:431:2: (otherlv_0= 'op' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= '(' ( ( (lv_params_3_0= ruleFullJvmFormalParameter ) ) (otherlv_4= ',' ( (lv_params_5_0= ruleFullJvmFormalParameter ) ) )* )? otherlv_6= ')' otherlv_7= ':' ( (lv_type_8_0= ruleJvmTypeReference ) ) ( (lv_body_9_0= ruleXBlockExpression ) ) )
-            // InternalQuan6.g:432:3: otherlv_0= 'op' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= '(' ( ( (lv_params_3_0= ruleFullJvmFormalParameter ) ) (otherlv_4= ',' ( (lv_params_5_0= ruleFullJvmFormalParameter ) ) )* )? otherlv_6= ')' otherlv_7= ':' ( (lv_type_8_0= ruleJvmTypeReference ) ) ( (lv_body_9_0= ruleXBlockExpression ) )
+            // InternalQuan6.g:431:2: (otherlv_0= '\\u51FD\\u6570' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= '(' ( ( (lv_params_3_0= ruleFullJvmFormalParameter ) ) (otherlv_4= ',' ( (lv_params_5_0= ruleFullJvmFormalParameter ) ) )* )? otherlv_6= ')' otherlv_7= ':' ( (lv_type_8_0= ruleJvmTypeReference ) ) ( (lv_body_9_0= ruleXBlockExpression ) ) )
+            // InternalQuan6.g:432:3: otherlv_0= '\\u51FD\\u6570' ( (lv_name_1_0= ruleValidID ) ) otherlv_2= '(' ( ( (lv_params_3_0= ruleFullJvmFormalParameter ) ) (otherlv_4= ',' ( (lv_params_5_0= ruleFullJvmFormalParameter ) ) )* )? otherlv_6= ')' otherlv_7= ':' ( (lv_type_8_0= ruleJvmTypeReference ) ) ( (lv_body_9_0= ruleXBlockExpression ) )
             {
             otherlv_0=(Token)match(input,19,FOLLOW_4); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
-              			newLeafNode(otherlv_0, grammarAccess.getOperationAccess().getOpKeyword_0());
+              			newLeafNode(otherlv_0, grammarAccess.getOperationAccess().getCjkUnifiedIdeograph51fdCjkUnifiedIdeograph6570Keyword_0());
               		
             }
             // InternalQuan6.g:436:3: ( (lv_name_1_0= ruleValidID ) )
@@ -1730,7 +1731,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                 if ( (LA11_1==23) ) {
                     alt11=1;
                 }
-                else if ( (LA11_1==EOF||(LA11_1>=RULE_STRING && LA11_1<=RULE_ID)||(LA11_1>=14 && LA11_1<=15)||(LA11_1>=17 && LA11_1<=18)||(LA11_1>=20 && LA11_1<=22)||(LA11_1>=24 && LA11_1<=60)||(LA11_1>=62 && LA11_1<=87)) ) {
+                else if ( (LA11_1==EOF||(LA11_1>=RULE_STRING && LA11_1<=RULE_ID)||(LA11_1>=14 && LA11_1<=15)||LA11_1==18||(LA11_1>=20 && LA11_1<=22)||(LA11_1>=24 && LA11_1<=60)||(LA11_1>=62 && LA11_1<=88)) ) {
                     alt11=2;
                 }
                 else {
@@ -1742,14 +1743,14 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                 }
                 }
                 break;
-            case 17:
+            case 73:
                 {
                 int LA11_2 = input.LA(2);
 
                 if ( (LA11_2==23) ) {
                     alt11=1;
                 }
-                else if ( (LA11_2==EOF||(LA11_2>=RULE_STRING && LA11_2<=RULE_ID)||(LA11_2>=14 && LA11_2<=15)||(LA11_2>=17 && LA11_2<=18)||(LA11_2>=20 && LA11_2<=22)||(LA11_2>=24 && LA11_2<=60)||(LA11_2>=62 && LA11_2<=87)) ) {
+                else if ( (LA11_2==EOF||(LA11_2>=RULE_STRING && LA11_2<=RULE_ID)||(LA11_2>=14 && LA11_2<=15)||LA11_2==18||(LA11_2>=20 && LA11_2<=22)||(LA11_2>=24 && LA11_2<=60)||(LA11_2>=62 && LA11_2<=88)) ) {
                     alt11=2;
                 }
                 else {
@@ -1761,14 +1762,14 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                 }
                 }
                 break;
-            case 73:
+            case 74:
                 {
                 int LA11_3 = input.LA(2);
 
                 if ( (LA11_3==23) ) {
                     alt11=1;
                 }
-                else if ( (LA11_3==EOF||(LA11_3>=RULE_STRING && LA11_3<=RULE_ID)||(LA11_3>=14 && LA11_3<=15)||(LA11_3>=17 && LA11_3<=18)||(LA11_3>=20 && LA11_3<=22)||(LA11_3>=24 && LA11_3<=60)||(LA11_3>=62 && LA11_3<=87)) ) {
+                else if ( (LA11_3==EOF||(LA11_3>=RULE_STRING && LA11_3<=RULE_ID)||(LA11_3>=14 && LA11_3<=15)||LA11_3==18||(LA11_3>=20 && LA11_3<=22)||(LA11_3>=24 && LA11_3<=60)||(LA11_3>=62 && LA11_3<=88)) ) {
                     alt11=2;
                 }
                 else {
@@ -1780,14 +1781,14 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                 }
                 }
                 break;
-            case 74:
+            case 75:
                 {
                 int LA11_4 = input.LA(2);
 
                 if ( (LA11_4==23) ) {
                     alt11=1;
                 }
-                else if ( (LA11_4==EOF||(LA11_4>=RULE_STRING && LA11_4<=RULE_ID)||(LA11_4>=14 && LA11_4<=15)||(LA11_4>=17 && LA11_4<=18)||(LA11_4>=20 && LA11_4<=22)||(LA11_4>=24 && LA11_4<=60)||(LA11_4>=62 && LA11_4<=87)) ) {
+                else if ( (LA11_4==EOF||(LA11_4>=RULE_STRING && LA11_4<=RULE_ID)||(LA11_4>=14 && LA11_4<=15)||LA11_4==18||(LA11_4>=20 && LA11_4<=22)||(LA11_4>=24 && LA11_4<=60)||(LA11_4>=62 && LA11_4<=88)) ) {
                     alt11=2;
                 }
                 else {
@@ -1799,14 +1800,14 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                 }
                 }
                 break;
-            case 75:
+            case 76:
                 {
                 int LA11_5 = input.LA(2);
 
                 if ( (LA11_5==23) ) {
                     alt11=1;
                 }
-                else if ( (LA11_5==EOF||(LA11_5>=RULE_STRING && LA11_5<=RULE_ID)||(LA11_5>=14 && LA11_5<=15)||(LA11_5>=17 && LA11_5<=18)||(LA11_5>=20 && LA11_5<=22)||(LA11_5>=24 && LA11_5<=60)||(LA11_5>=62 && LA11_5<=87)) ) {
+                else if ( (LA11_5==EOF||(LA11_5>=RULE_STRING && LA11_5<=RULE_ID)||(LA11_5>=14 && LA11_5<=15)||LA11_5==18||(LA11_5>=20 && LA11_5<=22)||(LA11_5>=24 && LA11_5<=60)||(LA11_5>=62 && LA11_5<=88)) ) {
                     alt11=2;
                 }
                 else {
@@ -1835,7 +1836,6 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
             case 68:
             case 69:
             case 70:
-            case 76:
             case 77:
             case 78:
             case 79:
@@ -1844,7 +1844,8 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
             case 82:
             case 83:
             case 84:
-            case 86:
+            case 85:
+            case 87:
                 {
                 alt11=2;
                 }
@@ -3926,7 +3927,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                 {
                 int LA19_2 = input.LA(2);
 
-                if ( (LA19_2==EOF||(LA19_2>=RULE_STRING && LA19_2<=RULE_ID)||LA19_2==14||LA19_2==17||LA19_2==20||LA19_2==29||(LA19_2>=45 && LA19_2<=46)||LA19_2==51||(LA19_2>=58 && LA19_2<=59)||LA19_2==63||LA19_2==65||(LA19_2>=68 && LA19_2<=70)||(LA19_2>=73 && LA19_2<=84)||LA19_2==86) ) {
+                if ( (LA19_2==EOF||(LA19_2>=RULE_STRING && LA19_2<=RULE_ID)||LA19_2==14||LA19_2==20||LA19_2==29||(LA19_2>=45 && LA19_2<=46)||LA19_2==51||(LA19_2>=58 && LA19_2<=59)||LA19_2==63||LA19_2==65||(LA19_2>=68 && LA19_2<=70)||(LA19_2>=73 && LA19_2<=85)||LA19_2==87) ) {
                     alt19=4;
                 }
                 else if ( (LA19_2==23) ) {
@@ -4412,7 +4413,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                     if ( (LA21_0==30) ) {
                         int LA21_1 = input.LA(2);
 
-                        if ( (LA21_1==EOF||(LA21_1>=RULE_STRING && LA21_1<=RULE_ID)||LA21_1==14||LA21_1==17||LA21_1==20||LA21_1==29||(LA21_1>=45 && LA21_1<=46)||LA21_1==51||(LA21_1>=58 && LA21_1<=59)||LA21_1==63||LA21_1==65||(LA21_1>=68 && LA21_1<=70)||(LA21_1>=73 && LA21_1<=84)||LA21_1==86) ) {
+                        if ( (LA21_1==EOF||(LA21_1>=RULE_STRING && LA21_1<=RULE_ID)||LA21_1==14||LA21_1==20||LA21_1==29||(LA21_1>=45 && LA21_1<=46)||LA21_1==51||(LA21_1>=58 && LA21_1<=59)||LA21_1==63||LA21_1==65||(LA21_1>=68 && LA21_1<=70)||(LA21_1>=73 && LA21_1<=85)||LA21_1==87) ) {
                             alt21=2;
                         }
                         else if ( (LA21_1==30) && (synpred8_InternalQuan6())) {
@@ -5490,7 +5491,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
             if ( ((LA28_0>=45 && LA28_0<=46)||LA28_0==51) ) {
                 alt28=1;
             }
-            else if ( ((LA28_0>=RULE_STRING && LA28_0<=RULE_ID)||LA28_0==14||LA28_0==17||LA28_0==20||LA28_0==29||(LA28_0>=58 && LA28_0<=59)||LA28_0==63||LA28_0==65||(LA28_0>=68 && LA28_0<=70)||(LA28_0>=73 && LA28_0<=84)||LA28_0==86) ) {
+            else if ( ((LA28_0>=RULE_STRING && LA28_0<=RULE_ID)||LA28_0==14||LA28_0==20||LA28_0==29||(LA28_0>=58 && LA28_0<=59)||LA28_0==63||LA28_0==65||(LA28_0>=68 && LA28_0<=70)||(LA28_0>=73 && LA28_0<=85)||LA28_0==87) ) {
                 alt28=2;
             }
             else {
@@ -7729,19 +7730,19 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
             else if ( (LA43_0==59) && (synpred21_InternalQuan6())) {
                 alt43=2;
             }
-            else if ( ((LA43_0>=78 && LA43_0<=79)) ) {
+            else if ( ((LA43_0>=79 && LA43_0<=80)) ) {
                 alt43=3;
             }
             else if ( ((LA43_0>=RULE_HEX && LA43_0<=RULE_DECIMAL)) ) {
                 alt43=4;
             }
-            else if ( (LA43_0==80) ) {
+            else if ( (LA43_0==81) ) {
                 alt43=5;
             }
             else if ( (LA43_0==RULE_STRING) ) {
                 alt43=6;
             }
-            else if ( (LA43_0==81) ) {
+            else if ( (LA43_0==82) ) {
                 alt43=7;
             }
             else {
@@ -8183,7 +8184,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
             int alt46=2;
             int LA46_0 = input.LA(1);
 
-            if ( ((LA46_0>=RULE_STRING && LA46_0<=RULE_ID)||LA46_0==14||LA46_0==17||LA46_0==20||LA46_0==29||(LA46_0>=45 && LA46_0<=46)||LA46_0==51||(LA46_0>=58 && LA46_0<=59)||LA46_0==63||LA46_0==65||(LA46_0>=68 && LA46_0<=70)||(LA46_0>=73 && LA46_0<=84)||LA46_0==86) ) {
+            if ( ((LA46_0>=RULE_STRING && LA46_0<=RULE_ID)||LA46_0==14||LA46_0==20||LA46_0==29||(LA46_0>=45 && LA46_0<=46)||LA46_0==51||(LA46_0>=58 && LA46_0<=59)||LA46_0==63||LA46_0==65||(LA46_0>=68 && LA46_0<=70)||(LA46_0>=73 && LA46_0<=85)||LA46_0==87) ) {
                 alt46=1;
             }
             switch (alt46) {
@@ -8419,7 +8420,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
             int alt48=2;
             int LA48_0 = input.LA(1);
 
-            if ( ((LA48_0>=RULE_STRING && LA48_0<=RULE_ID)||LA48_0==14||LA48_0==17||LA48_0==20||LA48_0==29||(LA48_0>=45 && LA48_0<=46)||LA48_0==51||(LA48_0>=58 && LA48_0<=59)||LA48_0==63||LA48_0==65||(LA48_0>=68 && LA48_0<=70)||(LA48_0>=73 && LA48_0<=84)||LA48_0==86) ) {
+            if ( ((LA48_0>=RULE_STRING && LA48_0<=RULE_ID)||LA48_0==14||LA48_0==20||LA48_0==29||(LA48_0>=45 && LA48_0<=46)||LA48_0==51||(LA48_0>=58 && LA48_0<=59)||LA48_0==63||LA48_0==65||(LA48_0>=68 && LA48_0<=70)||(LA48_0>=73 && LA48_0<=85)||LA48_0==87) ) {
                 alt48=1;
             }
             switch (alt48) {
@@ -8964,7 +8965,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                 int alt53=2;
                 int LA53_0 = input.LA(1);
 
-                if ( ((LA53_0>=RULE_STRING && LA53_0<=RULE_ID)||LA53_0==14||LA53_0==17||LA53_0==20||LA53_0==29||(LA53_0>=45 && LA53_0<=46)||LA53_0==51||(LA53_0>=58 && LA53_0<=59)||LA53_0==63||LA53_0==65||(LA53_0>=68 && LA53_0<=84)||LA53_0==86) ) {
+                if ( ((LA53_0>=RULE_STRING && LA53_0<=RULE_ID)||LA53_0==14||LA53_0==20||LA53_0==29||(LA53_0>=45 && LA53_0<=46)||LA53_0==51||(LA53_0>=58 && LA53_0<=59)||LA53_0==63||LA53_0==65||(LA53_0>=68 && LA53_0<=85)||LA53_0==87) ) {
                     alt53=1;
                 }
 
@@ -10861,7 +10862,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
             int alt65=2;
             int LA65_0 = input.LA(1);
 
-            if ( ((LA65_0>=RULE_STRING && LA65_0<=RULE_ID)||LA65_0==14||LA65_0==17||LA65_0==20||LA65_0==29||(LA65_0>=45 && LA65_0<=46)||LA65_0==51||(LA65_0>=58 && LA65_0<=59)||LA65_0==63||LA65_0==65||(LA65_0>=68 && LA65_0<=84)||LA65_0==86) ) {
+            if ( ((LA65_0>=RULE_STRING && LA65_0<=RULE_ID)||LA65_0==14||LA65_0==20||LA65_0==29||(LA65_0>=45 && LA65_0<=46)||LA65_0==51||(LA65_0>=58 && LA65_0<=59)||LA65_0==63||LA65_0==65||(LA65_0>=68 && LA65_0<=85)||LA65_0==87) ) {
                 alt65=1;
             }
             switch (alt65) {
@@ -10984,7 +10985,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
             int alt66=2;
             int LA66_0 = input.LA(1);
 
-            if ( ((LA66_0>=RULE_STRING && LA66_0<=RULE_ID)||LA66_0==14||LA66_0==17||LA66_0==20||LA66_0==29||(LA66_0>=45 && LA66_0<=46)||LA66_0==51||(LA66_0>=58 && LA66_0<=59)||LA66_0==63||LA66_0==65||(LA66_0>=68 && LA66_0<=70)||(LA66_0>=73 && LA66_0<=84)||LA66_0==86) ) {
+            if ( ((LA66_0>=RULE_STRING && LA66_0<=RULE_ID)||LA66_0==14||LA66_0==20||LA66_0==29||(LA66_0>=45 && LA66_0<=46)||LA66_0==51||(LA66_0>=58 && LA66_0<=59)||LA66_0==63||LA66_0==65||(LA66_0>=68 && LA66_0<=70)||(LA66_0>=73 && LA66_0<=85)||LA66_0==87) ) {
                 alt66=1;
             }
             switch (alt66) {
@@ -11036,7 +11037,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
             int alt68=2;
             int LA68_0 = input.LA(1);
 
-            if ( ((LA68_0>=RULE_STRING && LA68_0<=RULE_ID)||LA68_0==14||LA68_0==17||LA68_0==20||LA68_0==29||(LA68_0>=45 && LA68_0<=46)||LA68_0==51||(LA68_0>=58 && LA68_0<=59)||LA68_0==63||LA68_0==65||(LA68_0>=68 && LA68_0<=70)||(LA68_0>=73 && LA68_0<=84)||LA68_0==86) ) {
+            if ( ((LA68_0>=RULE_STRING && LA68_0<=RULE_ID)||LA68_0==14||LA68_0==20||LA68_0==29||(LA68_0>=45 && LA68_0<=46)||LA68_0==51||(LA68_0>=58 && LA68_0<=59)||LA68_0==63||LA68_0==65||(LA68_0>=68 && LA68_0<=70)||(LA68_0>=73 && LA68_0<=85)||LA68_0==87) ) {
                 alt68=1;
             }
             switch (alt68) {
@@ -11683,7 +11684,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                 int alt70=2;
                 int LA70_0 = input.LA(1);
 
-                if ( ((LA70_0>=RULE_STRING && LA70_0<=RULE_ID)||LA70_0==14||LA70_0==17||LA70_0==20||LA70_0==29||(LA70_0>=45 && LA70_0<=46)||LA70_0==51||(LA70_0>=58 && LA70_0<=59)||LA70_0==63||LA70_0==65||(LA70_0>=68 && LA70_0<=84)||LA70_0==86) ) {
+                if ( ((LA70_0>=RULE_STRING && LA70_0<=RULE_ID)||LA70_0==14||LA70_0==20||LA70_0==29||(LA70_0>=45 && LA70_0<=46)||LA70_0==51||(LA70_0>=58 && LA70_0<=59)||LA70_0==63||LA70_0==65||(LA70_0>=68 && LA70_0<=85)||LA70_0==87) ) {
                     alt70=1;
                 }
 
@@ -11853,7 +11854,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
             if ( ((LA71_0>=71 && LA71_0<=72)) ) {
                 alt71=1;
             }
-            else if ( ((LA71_0>=RULE_STRING && LA71_0<=RULE_ID)||LA71_0==14||LA71_0==17||LA71_0==20||LA71_0==29||(LA71_0>=45 && LA71_0<=46)||LA71_0==51||(LA71_0>=58 && LA71_0<=59)||LA71_0==63||LA71_0==65||(LA71_0>=68 && LA71_0<=70)||(LA71_0>=73 && LA71_0<=84)||LA71_0==86) ) {
+            else if ( ((LA71_0>=RULE_STRING && LA71_0<=RULE_ID)||LA71_0==14||LA71_0==20||LA71_0==29||(LA71_0>=45 && LA71_0<=46)||LA71_0==51||(LA71_0>=58 && LA71_0<=59)||LA71_0==63||LA71_0==65||(LA71_0>=68 && LA71_0<=70)||(LA71_0>=73 && LA71_0<=85)||LA71_0==87) ) {
                 alt71=2;
             }
             else {
@@ -13237,22 +13238,22 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                 alt82=1;
                 }
                 break;
-            case 17:
+            case 73:
                 {
                 alt82=2;
                 }
                 break;
-            case 73:
+            case 74:
                 {
                 alt82=3;
                 }
                 break;
-            case 74:
+            case 75:
                 {
                 alt82=4;
                 }
                 break;
-            case 75:
+            case 76:
                 {
                 alt82=5;
                 }
@@ -13295,7 +13296,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                 case 2 :
                     // InternalQuan6.g:4837:3: kw= 'extends'
                     {
-                    kw=(Token)match(input,17,FOLLOW_2); if (state.failed) return current;
+                    kw=(Token)match(input,73,FOLLOW_2); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                       			current.merge(kw);
@@ -13308,7 +13309,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                 case 3 :
                     // InternalQuan6.g:4843:3: kw= 'static'
                     {
-                    kw=(Token)match(input,73,FOLLOW_2); if (state.failed) return current;
+                    kw=(Token)match(input,74,FOLLOW_2); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                       			current.merge(kw);
@@ -13321,7 +13322,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                 case 4 :
                     // InternalQuan6.g:4849:3: kw= 'import'
                     {
-                    kw=(Token)match(input,74,FOLLOW_2); if (state.failed) return current;
+                    kw=(Token)match(input,75,FOLLOW_2); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                       			current.merge(kw);
@@ -13334,7 +13335,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                 case 5 :
                     // InternalQuan6.g:4855:3: kw= 'extension'
                     {
-                    kw=(Token)match(input,75,FOLLOW_2); if (state.failed) return current;
+                    kw=(Token)match(input,76,FOLLOW_2); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                       			current.merge(kw);
@@ -13428,10 +13429,10 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
             int alt83=2;
             int LA83_0 = input.LA(1);
 
-            if ( (LA83_0==RULE_ID||LA83_0==17||(LA83_0>=73 && LA83_0<=75)) ) {
+            if ( (LA83_0==RULE_ID||(LA83_0>=73 && LA83_0<=76)) ) {
                 alt83=1;
             }
-            else if ( (LA83_0==76) ) {
+            else if ( (LA83_0==77) ) {
                 alt83=2;
             }
             else {
@@ -13471,7 +13472,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                 case 2 :
                     // InternalQuan6.g:4890:3: kw= 'super'
                     {
-                    kw=(Token)match(input,76,FOLLOW_2); if (state.failed) return current;
+                    kw=(Token)match(input,77,FOLLOW_2); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                       			current.merge(kw);
@@ -13593,7 +13594,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,77,FOLLOW_4); if (state.failed) return current;
+            otherlv_1=(Token)match(input,78,FOLLOW_4); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               			newLeafNode(otherlv_1, grammarAccess.getXConstructorCallAccess().getNewKeyword_1());
@@ -14110,10 +14111,10 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
             int alt90=2;
             int LA90_0 = input.LA(1);
 
-            if ( (LA90_0==78) ) {
+            if ( (LA90_0==79) ) {
                 alt90=1;
             }
-            else if ( (LA90_0==79) ) {
+            else if ( (LA90_0==80) ) {
                 alt90=2;
             }
             else {
@@ -14127,7 +14128,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                 case 1 :
                     // InternalQuan6.g:5167:4: otherlv_1= 'false'
                     {
-                    otherlv_1=(Token)match(input,78,FOLLOW_2); if (state.failed) return current;
+                    otherlv_1=(Token)match(input,79,FOLLOW_2); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                       				newLeafNode(otherlv_1, grammarAccess.getXBooleanLiteralAccess().getFalseKeyword_1_0());
@@ -14145,7 +14146,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                     // InternalQuan6.g:5173:5: (lv_isTrue_2_0= 'true' )
                     // InternalQuan6.g:5174:6: lv_isTrue_2_0= 'true'
                     {
-                    lv_isTrue_2_0=(Token)match(input,79,FOLLOW_2); if (state.failed) return current;
+                    lv_isTrue_2_0=(Token)match(input,80,FOLLOW_2); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                       						newLeafNode(lv_isTrue_2_0, grammarAccess.getXBooleanLiteralAccess().getIsTrueTrueKeyword_1_1_0());
@@ -14265,7 +14266,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,80,FOLLOW_2); if (state.failed) return current;
+            otherlv_1=(Token)match(input,81,FOLLOW_2); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               			newLeafNode(otherlv_1, grammarAccess.getXNullLiteralAccess().getNullKeyword_1());
@@ -14623,7 +14624,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,81,FOLLOW_11); if (state.failed) return current;
+            otherlv_1=(Token)match(input,82,FOLLOW_11); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               			newLeafNode(otherlv_1, grammarAccess.getXTypeLiteralAccess().getTypeofKeyword_1());
@@ -14824,7 +14825,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,82,FOLLOW_15); if (state.failed) return current;
+            otherlv_1=(Token)match(input,83,FOLLOW_15); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               			newLeafNode(otherlv_1, grammarAccess.getXThrowExpressionAccess().getThrowKeyword_1());
@@ -14961,7 +14962,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,83,FOLLOW_72); if (state.failed) return current;
+            otherlv_1=(Token)match(input,84,FOLLOW_72); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               			newLeafNode(otherlv_1, grammarAccess.getXReturnExpressionAccess().getReturnKeyword_1());
@@ -15113,7 +15114,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,84,FOLLOW_15); if (state.failed) return current;
+            otherlv_1=(Token)match(input,85,FOLLOW_15); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               			newLeafNode(otherlv_1, grammarAccess.getXTryCatchFinallyExpressionAccess().getTryKeyword_1());
@@ -15158,10 +15159,10 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
             int alt95=2;
             int LA95_0 = input.LA(1);
 
-            if ( (LA95_0==87) ) {
+            if ( (LA95_0==88) ) {
                 alt95=1;
             }
-            else if ( (LA95_0==85) ) {
+            else if ( (LA95_0==86) ) {
                 alt95=2;
             }
             else {
@@ -15185,7 +15186,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                         int alt93=2;
                         int LA93_0 = input.LA(1);
 
-                        if ( (LA93_0==87) ) {
+                        if ( (LA93_0==88) ) {
                             int LA93_2 = input.LA(2);
 
                             if ( (synpred38_InternalQuan6()) ) {
@@ -15247,7 +15248,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                     int alt94=2;
                     int LA94_0 = input.LA(1);
 
-                    if ( (LA94_0==85) ) {
+                    if ( (LA94_0==86) ) {
                         int LA94_1 = input.LA(2);
 
                         if ( (synpred39_InternalQuan6()) ) {
@@ -15261,7 +15262,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                             // InternalQuan6.g:5550:6: ( ( 'finally' )=>otherlv_4= 'finally' )
                             // InternalQuan6.g:5551:7: ( 'finally' )=>otherlv_4= 'finally'
                             {
-                            otherlv_4=(Token)match(input,85,FOLLOW_15); if (state.failed) return current;
+                            otherlv_4=(Token)match(input,86,FOLLOW_15); if (state.failed) return current;
                             if ( state.backtracking==0 ) {
 
                               							newLeafNode(otherlv_4, grammarAccess.getXTryCatchFinallyExpressionAccess().getFinallyKeyword_3_0_1_0());
@@ -15323,7 +15324,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                     // InternalQuan6.g:5579:4: (otherlv_6= 'finally' ( (lv_finallyExpression_7_0= ruleXExpression ) ) )
                     // InternalQuan6.g:5580:5: otherlv_6= 'finally' ( (lv_finallyExpression_7_0= ruleXExpression ) )
                     {
-                    otherlv_6=(Token)match(input,85,FOLLOW_15); if (state.failed) return current;
+                    otherlv_6=(Token)match(input,86,FOLLOW_15); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                       					newLeafNode(otherlv_6, grammarAccess.getXTryCatchFinallyExpressionAccess().getFinallyKeyword_3_1_0());
@@ -15479,7 +15480,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,86,FOLLOW_11); if (state.failed) return current;
+            otherlv_1=(Token)match(input,87,FOLLOW_11); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               					newLeafNode(otherlv_1, grammarAccess.getXSynchronizedExpressionAccess().getSynchronizedKeyword_0_0_1());
@@ -15663,7 +15664,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
             // InternalQuan6.g:5711:3: ( ( 'catch' )=>otherlv_0= 'catch' )
             // InternalQuan6.g:5712:4: ( 'catch' )=>otherlv_0= 'catch'
             {
-            otherlv_0=(Token)match(input,87,FOLLOW_11); if (state.failed) return current;
+            otherlv_0=(Token)match(input,88,FOLLOW_11); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               				newLeafNode(otherlv_0, grammarAccess.getXCatchClauseAccess().getCatchKeyword_0());
@@ -17377,7 +17378,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
             if ( (LA111_0==RULE_ID||LA111_0==20||LA111_0==42) ) {
                 alt111=1;
             }
-            else if ( (LA111_0==88) ) {
+            else if ( (LA111_0==89) ) {
                 alt111=2;
             }
             else {
@@ -17534,7 +17535,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,88,FOLLOW_80); if (state.failed) return current;
+            otherlv_1=(Token)match(input,89,FOLLOW_80); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               			newLeafNode(otherlv_1, grammarAccess.getJvmWildcardTypeReferenceAccess().getQuestionMarkKeyword_1());
@@ -17544,10 +17545,10 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
             int alt114=3;
             int LA114_0 = input.LA(1);
 
-            if ( (LA114_0==17) ) {
+            if ( (LA114_0==73) ) {
                 alt114=1;
             }
-            else if ( (LA114_0==76) ) {
+            else if ( (LA114_0==77) ) {
                 alt114=2;
             }
             switch (alt114) {
@@ -17598,7 +17599,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                         int alt112=2;
                         int LA112_0 = input.LA(1);
 
-                        if ( (LA112_0==89) ) {
+                        if ( (LA112_0==90) ) {
                             alt112=1;
                         }
 
@@ -17698,7 +17699,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                         int alt113=2;
                         int LA113_0 = input.LA(1);
 
-                        if ( (LA113_0==89) ) {
+                        if ( (LA113_0==90) ) {
                             alt113=1;
                         }
 
@@ -17837,7 +17838,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
             // InternalQuan6.g:6436:2: (otherlv_0= 'extends' ( (lv_typeReference_1_0= ruleJvmTypeReference ) ) )
             // InternalQuan6.g:6437:3: otherlv_0= 'extends' ( (lv_typeReference_1_0= ruleJvmTypeReference ) )
             {
-            otherlv_0=(Token)match(input,17,FOLLOW_8); if (state.failed) return current;
+            otherlv_0=(Token)match(input,73,FOLLOW_8); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               			newLeafNode(otherlv_0, grammarAccess.getJvmUpperBoundAccess().getExtendsKeyword_0());
@@ -17961,7 +17962,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
             // InternalQuan6.g:6478:2: (otherlv_0= '&' ( (lv_typeReference_1_0= ruleJvmTypeReference ) ) )
             // InternalQuan6.g:6479:3: otherlv_0= '&' ( (lv_typeReference_1_0= ruleJvmTypeReference ) )
             {
-            otherlv_0=(Token)match(input,89,FOLLOW_8); if (state.failed) return current;
+            otherlv_0=(Token)match(input,90,FOLLOW_8); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               			newLeafNode(otherlv_0, grammarAccess.getJvmUpperBoundAndedAccess().getAmpersandKeyword_0());
@@ -18085,7 +18086,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
             // InternalQuan6.g:6520:2: (otherlv_0= 'super' ( (lv_typeReference_1_0= ruleJvmTypeReference ) ) )
             // InternalQuan6.g:6521:3: otherlv_0= 'super' ( (lv_typeReference_1_0= ruleJvmTypeReference ) )
             {
-            otherlv_0=(Token)match(input,76,FOLLOW_8); if (state.failed) return current;
+            otherlv_0=(Token)match(input,77,FOLLOW_8); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               			newLeafNode(otherlv_0, grammarAccess.getJvmLowerBoundAccess().getSuperKeyword_0());
@@ -18209,7 +18210,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
             // InternalQuan6.g:6562:2: (otherlv_0= '&' ( (lv_typeReference_1_0= ruleJvmTypeReference ) ) )
             // InternalQuan6.g:6563:3: otherlv_0= '&' ( (lv_typeReference_1_0= ruleJvmTypeReference ) )
             {
-            otherlv_0=(Token)match(input,89,FOLLOW_8); if (state.failed) return current;
+            otherlv_0=(Token)match(input,90,FOLLOW_8); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               			newLeafNode(otherlv_0, grammarAccess.getJvmLowerBoundAndedAccess().getAmpersandKeyword_0());
@@ -18539,7 +18540,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                 int alt115=2;
                 int LA115_0 = input.LA(1);
 
-                if ( (LA115_0==74) ) {
+                if ( (LA115_0==75) ) {
                     alt115=1;
                 }
 
@@ -18677,7 +18678,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
             // InternalQuan6.g:6703:2: (otherlv_0= 'import' ( ( ( (lv_static_1_0= 'static' ) ) ( (lv_extension_2_0= 'extension' ) )? ( ( ruleQualifiedNameInStaticImport ) ) ( ( (lv_wildcard_4_0= '*' ) ) | ( (lv_memberName_5_0= ruleValidID ) ) ) ) | ( ( ruleQualifiedName ) ) | ( (lv_importedNamespace_7_0= ruleQualifiedNameWithWildcard ) ) ) (otherlv_8= ';' )? )
             // InternalQuan6.g:6704:3: otherlv_0= 'import' ( ( ( (lv_static_1_0= 'static' ) ) ( (lv_extension_2_0= 'extension' ) )? ( ( ruleQualifiedNameInStaticImport ) ) ( ( (lv_wildcard_4_0= '*' ) ) | ( (lv_memberName_5_0= ruleValidID ) ) ) ) | ( ( ruleQualifiedName ) ) | ( (lv_importedNamespace_7_0= ruleQualifiedNameWithWildcard ) ) ) (otherlv_8= ';' )?
             {
-            otherlv_0=(Token)match(input,74,FOLLOW_85); if (state.failed) return current;
+            otherlv_0=(Token)match(input,75,FOLLOW_85); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               			newLeafNode(otherlv_0, grammarAccess.getXImportDeclarationAccess().getImportKeyword_0());
@@ -18699,7 +18700,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                     // InternalQuan6.g:6711:6: (lv_static_1_0= 'static' )
                     // InternalQuan6.g:6712:7: lv_static_1_0= 'static'
                     {
-                    lv_static_1_0=(Token)match(input,73,FOLLOW_86); if (state.failed) return current;
+                    lv_static_1_0=(Token)match(input,74,FOLLOW_86); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                       							newLeafNode(lv_static_1_0, grammarAccess.getXImportDeclarationAccess().getStaticStaticKeyword_1_0_0_0());
@@ -18723,7 +18724,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                     int alt116=2;
                     int LA116_0 = input.LA(1);
 
-                    if ( (LA116_0==75) ) {
+                    if ( (LA116_0==76) ) {
                         alt116=1;
                     }
                     switch (alt116) {
@@ -18733,7 +18734,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                             // InternalQuan6.g:6725:6: (lv_extension_2_0= 'extension' )
                             // InternalQuan6.g:6726:7: lv_extension_2_0= 'extension'
                             {
-                            lv_extension_2_0=(Token)match(input,75,FOLLOW_86); if (state.failed) return current;
+                            lv_extension_2_0=(Token)match(input,76,FOLLOW_86); if (state.failed) return current;
                             if ( state.backtracking==0 ) {
 
                               							newLeafNode(lv_extension_2_0, grammarAccess.getXImportDeclarationAccess().getExtensionExtensionKeyword_1_0_1_0());
@@ -19930,7 +19931,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
         {
         }
 
-        match(input,86,FOLLOW_11); if (state.failed) return ;
+        match(input,87,FOLLOW_11); if (state.failed) return ;
         match(input,20,FOLLOW_2); if (state.failed) return ;
 
         }
@@ -20552,7 +20553,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
         // InternalQuan6.g:5459:4: ( 'extends' | 'static' | 'import' | 'extension' | '!' | '-' | '+' | 'new' | '{' | 'switch' | 'synchronized' | '<' | 'super' | '#' | '[' | 'false' | 'true' | 'null' | 'typeof' | 'if' | 'for' | 'while' | 'do' | 'throw' | 'return' | 'try' | '(' | RULE_ID | RULE_HEX | RULE_INT | RULE_DECIMAL | RULE_STRING )
         // InternalQuan6.g:
         {
-        if ( (input.LA(1)>=RULE_STRING && input.LA(1)<=RULE_ID)||input.LA(1)==14||input.LA(1)==17||input.LA(1)==20||input.LA(1)==29||(input.LA(1)>=45 && input.LA(1)<=46)||input.LA(1)==51||(input.LA(1)>=58 && input.LA(1)<=59)||input.LA(1)==63||input.LA(1)==65||(input.LA(1)>=68 && input.LA(1)<=70)||(input.LA(1)>=73 && input.LA(1)<=84)||input.LA(1)==86 ) {
+        if ( (input.LA(1)>=RULE_STRING && input.LA(1)<=RULE_ID)||input.LA(1)==14||input.LA(1)==20||input.LA(1)==29||(input.LA(1)>=45 && input.LA(1)<=46)||input.LA(1)==51||(input.LA(1)>=58 && input.LA(1)<=59)||input.LA(1)==63||input.LA(1)==65||(input.LA(1)>=68 && input.LA(1)<=70)||(input.LA(1)>=73 && input.LA(1)<=85)||input.LA(1)==87 ) {
             input.consume();
             state.errorRecovery=false;state.failed=false;
         }
@@ -20572,7 +20573,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
         // InternalQuan6.g:5530:6: ( 'catch' )
         // InternalQuan6.g:5530:7: 'catch'
         {
-        match(input,87,FOLLOW_2); if (state.failed) return ;
+        match(input,88,FOLLOW_2); if (state.failed) return ;
 
         }
     }
@@ -20583,7 +20584,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
         // InternalQuan6.g:5551:7: ( 'finally' )
         // InternalQuan6.g:5551:8: 'finally'
         {
-        match(input,85,FOLLOW_2); if (state.failed) return ;
+        match(input,86,FOLLOW_2); if (state.failed) return ;
 
         }
     }
@@ -21272,11 +21273,11 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
     static final String dfa_1s = "\12\uffff";
     static final String dfa_2s = "\1\10\11\uffff";
     static final String dfa_3s = "\1\4\7\0\2\uffff";
-    static final String dfa_4s = "\1\127\7\0\2\uffff";
+    static final String dfa_4s = "\1\130\7\0\2\uffff";
     static final String dfa_5s = "\10\uffff\1\2\1\1";
     static final String dfa_6s = "\1\uffff\1\2\1\3\1\4\1\5\1\6\1\1\1\0\2\uffff}>";
     static final String[] dfa_7s = {
-            "\5\10\5\uffff\2\10\1\uffff\2\10\1\uffff\3\10\1\uffff\1\1\1\2\1\3\1\4\1\5\1\6\1\7\36\10\1\uffff\32\10",
+            "\5\10\5\uffff\2\10\2\uffff\1\10\1\uffff\3\10\1\uffff\1\1\1\2\1\3\1\4\1\5\1\6\1\7\36\10\1\uffff\33\10",
             "\1\uffff",
             "\1\uffff",
             "\1\uffff",
@@ -21432,11 +21433,11 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
     static final String dfa_8s = "\13\uffff";
     static final String dfa_9s = "\1\1\12\uffff";
     static final String dfa_10s = "\1\4\1\uffff\10\0\1\uffff";
-    static final String dfa_11s = "\1\127\1\uffff\10\0\1\uffff";
+    static final String dfa_11s = "\1\130\1\uffff\10\0\1\uffff";
     static final String dfa_12s = "\1\uffff\1\2\10\uffff\1\1";
     static final String dfa_13s = "\2\uffff\1\3\1\0\1\1\1\2\1\4\1\5\1\6\1\7\1\uffff}>";
     static final String[] dfa_14s = {
-            "\5\1\5\uffff\2\1\1\uffff\2\1\1\uffff\3\1\1\uffff\5\1\1\2\1\3\10\1\1\4\1\5\1\6\1\7\1\10\1\11\20\1\1\uffff\32\1",
+            "\5\1\5\uffff\2\1\2\uffff\1\1\1\uffff\3\1\1\uffff\5\1\1\2\1\3\10\1\1\4\1\5\1\6\1\7\1\10\1\11\20\1\1\uffff\33\1",
             "",
             "\1\uffff",
             "\1\uffff",
@@ -21648,11 +21649,11 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
     static final String dfa_20s = "\116\uffff";
     static final String dfa_21s = "\1\2\115\uffff";
     static final String dfa_22s = "\1\4\1\0\114\uffff";
-    static final String dfa_23s = "\1\127\1\0\114\uffff";
+    static final String dfa_23s = "\1\130\1\0\114\uffff";
     static final String dfa_24s = "\2\uffff\1\2\112\uffff\1\1";
     static final String dfa_25s = "\1\uffff\1\0\114\uffff}>";
     static final String[] dfa_26s = {
-            "\5\2\5\uffff\2\2\1\uffff\2\2\1\uffff\1\1\2\2\1\uffff\45\2\1\uffff\32\2",
+            "\5\2\5\uffff\2\2\2\uffff\1\2\1\uffff\1\1\2\2\1\uffff\45\2\1\uffff\33\2",
             "\1\uffff",
             "",
             "",
@@ -21785,11 +21786,11 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
     }
     static final String dfa_27s = "\44\uffff";
     static final String dfa_28s = "\1\4\2\0\41\uffff";
-    static final String dfa_29s = "\1\126\2\0\41\uffff";
+    static final String dfa_29s = "\1\127\2\0\41\uffff";
     static final String dfa_30s = "\3\uffff\2\1\1\2\35\uffff\1\3";
     static final String dfa_31s = "\1\0\1\1\1\2\41\uffff}>";
     static final String[] dfa_32s = {
-            "\4\5\1\1\5\uffff\1\5\2\uffff\1\5\2\uffff\1\2\1\uffff\1\43\6\uffff\1\5\14\uffff\1\3\2\uffff\2\5\4\uffff\1\5\6\uffff\2\5\1\uffff\1\4\1\uffff\1\5\1\uffff\1\5\2\uffff\3\5\2\uffff\14\5\1\uffff\1\5",
+            "\4\5\1\1\5\uffff\1\5\5\uffff\1\2\1\uffff\1\43\6\uffff\1\5\14\uffff\1\3\2\uffff\2\5\4\uffff\1\5\6\uffff\2\5\1\uffff\1\4\1\uffff\1\5\1\uffff\1\5\2\uffff\3\5\2\uffff\15\5\1\uffff\1\5",
             "\1\uffff",
             "\1\uffff",
             "",
@@ -21869,7 +21870,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
 
                         else if ( (LA38_0==61) && (synpred17_InternalQuan6())) {s = 4;}
 
-                        else if ( ((LA38_0>=RULE_STRING && LA38_0<=RULE_DECIMAL)||LA38_0==14||LA38_0==17||LA38_0==29||(LA38_0>=45 && LA38_0<=46)||LA38_0==51||(LA38_0>=58 && LA38_0<=59)||LA38_0==63||LA38_0==65||(LA38_0>=68 && LA38_0<=70)||(LA38_0>=73 && LA38_0<=84)||LA38_0==86) ) {s = 5;}
+                        else if ( ((LA38_0>=RULE_STRING && LA38_0<=RULE_DECIMAL)||LA38_0==14||LA38_0==29||(LA38_0>=45 && LA38_0<=46)||LA38_0==51||(LA38_0>=58 && LA38_0<=59)||LA38_0==63||LA38_0==65||(LA38_0>=68 && LA38_0<=70)||(LA38_0>=73 && LA38_0<=85)||LA38_0==87) ) {s = 5;}
 
                         else if ( (LA38_0==22) ) {s = 35;}
 
@@ -21916,7 +21917,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
         }
     }
     static final String[] dfa_33s = {
-            "\5\2\5\uffff\2\2\1\uffff\2\2\1\uffff\3\2\1\uffff\43\2\1\1\1\2\1\uffff\32\2",
+            "\5\2\5\uffff\2\2\2\uffff\1\2\1\uffff\3\2\1\uffff\43\2\1\1\1\2\1\uffff\33\2",
             "\1\uffff",
             "",
             "",
@@ -22042,11 +22043,11 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
     }
     static final String dfa_34s = "\40\uffff";
     static final String dfa_35s = "\1\4\26\uffff\1\0\10\uffff";
-    static final String dfa_36s = "\1\126\26\uffff\1\0\10\uffff";
+    static final String dfa_36s = "\1\127\26\uffff\1\0\10\uffff";
     static final String dfa_37s = "\1\uffff\1\1\1\2\1\3\1\4\1\5\6\uffff\1\6\11\uffff\1\7\1\uffff\1\12\1\13\1\14\1\15\1\16\1\17\1\10\1\11";
     static final String dfa_38s = "\1\0\26\uffff\1\1\10\uffff}>";
     static final String[] dfa_39s = {
-            "\4\14\1\5\5\uffff\1\2\2\uffff\1\5\2\uffff\1\35\10\uffff\1\5\34\uffff\2\14\3\uffff\1\26\1\uffff\1\3\2\uffff\1\27\1\30\1\31\2\uffff\4\5\1\1\4\14\1\32\1\33\1\34\1\uffff\1\4",
+            "\4\14\1\5\5\uffff\1\2\5\uffff\1\35\10\uffff\1\5\34\uffff\2\14\3\uffff\1\26\1\uffff\1\3\2\uffff\1\27\1\30\1\31\2\uffff\5\5\1\1\4\14\1\32\1\33\1\34\1\uffff\1\4",
             "",
             "",
             "",
@@ -22114,17 +22115,17 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
                         int index42_0 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (LA42_0==77) ) {s = 1;}
+                        if ( (LA42_0==78) ) {s = 1;}
 
                         else if ( (LA42_0==14) ) {s = 2;}
 
                         else if ( (LA42_0==65) ) {s = 3;}
 
-                        else if ( (LA42_0==86) && (synpred19_InternalQuan6())) {s = 4;}
+                        else if ( (LA42_0==87) && (synpred19_InternalQuan6())) {s = 4;}
 
-                        else if ( (LA42_0==RULE_ID||LA42_0==17||LA42_0==29||(LA42_0>=73 && LA42_0<=76)) ) {s = 5;}
+                        else if ( (LA42_0==RULE_ID||LA42_0==29||(LA42_0>=73 && LA42_0<=77)) ) {s = 5;}
 
-                        else if ( ((LA42_0>=RULE_STRING && LA42_0<=RULE_DECIMAL)||(LA42_0>=58 && LA42_0<=59)||(LA42_0>=78 && LA42_0<=81)) ) {s = 12;}
+                        else if ( ((LA42_0>=RULE_STRING && LA42_0<=RULE_DECIMAL)||(LA42_0>=58 && LA42_0<=59)||(LA42_0>=79 && LA42_0<=82)) ) {s = 12;}
 
                         else if ( (LA42_0==63) ) {s = 22;}
 
@@ -22134,11 +22135,11 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
 
                         else if ( (LA42_0==70) ) {s = 25;}
 
-                        else if ( (LA42_0==82) ) {s = 26;}
+                        else if ( (LA42_0==83) ) {s = 26;}
 
-                        else if ( (LA42_0==83) ) {s = 27;}
+                        else if ( (LA42_0==84) ) {s = 27;}
 
-                        else if ( (LA42_0==84) ) {s = 28;}
+                        else if ( (LA42_0==85) ) {s = 28;}
 
                         else if ( (LA42_0==20) ) {s = 29;}
 
@@ -22171,11 +22172,11 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
     }
     static final String dfa_40s = "\46\uffff";
     static final String dfa_41s = "\1\4\2\0\43\uffff";
-    static final String dfa_42s = "\1\126\2\0\43\uffff";
+    static final String dfa_42s = "\1\127\2\0\43\uffff";
     static final String dfa_43s = "\3\uffff\2\1\1\2\40\uffff";
     static final String dfa_44s = "\1\0\1\1\1\2\43\uffff}>";
     static final String[] dfa_45s = {
-            "\4\5\1\1\5\uffff\1\5\2\uffff\1\5\2\uffff\1\2\10\uffff\1\5\14\uffff\1\3\2\uffff\2\5\4\uffff\1\5\6\uffff\3\5\1\4\1\uffff\1\5\1\uffff\1\5\2\uffff\21\5\1\uffff\1\5",
+            "\4\5\1\1\5\uffff\1\5\5\uffff\1\2\10\uffff\1\5\14\uffff\1\3\2\uffff\2\5\4\uffff\1\5\6\uffff\3\5\1\4\1\uffff\1\5\1\uffff\1\5\2\uffff\22\5\1\uffff\1\5",
             "\1\uffff",
             "\1\uffff",
             "",
@@ -22257,7 +22258,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
 
                         else if ( (LA51_0==61) && (synpred23_InternalQuan6())) {s = 4;}
 
-                        else if ( ((LA51_0>=RULE_STRING && LA51_0<=RULE_DECIMAL)||LA51_0==14||LA51_0==17||LA51_0==29||(LA51_0>=45 && LA51_0<=46)||LA51_0==51||(LA51_0>=58 && LA51_0<=60)||LA51_0==63||LA51_0==65||(LA51_0>=68 && LA51_0<=84)||LA51_0==86) ) {s = 5;}
+                        else if ( ((LA51_0>=RULE_STRING && LA51_0<=RULE_DECIMAL)||LA51_0==14||LA51_0==29||(LA51_0>=45 && LA51_0<=46)||LA51_0==51||(LA51_0>=58 && LA51_0<=60)||LA51_0==63||LA51_0==65||(LA51_0>=68 && LA51_0<=85)||LA51_0==87) ) {s = 5;}
 
                          
                         input.seek(index51_0);
@@ -22303,11 +22304,11 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
     }
     static final String dfa_46s = "\43\uffff";
     static final String dfa_47s = "\1\4\1\0\41\uffff";
-    static final String dfa_48s = "\1\126\1\0\41\uffff";
+    static final String dfa_48s = "\1\127\1\0\41\uffff";
     static final String dfa_49s = "\2\uffff\1\2\37\uffff\1\1";
     static final String dfa_50s = "\1\uffff\1\0\41\uffff}>";
     static final String[] dfa_51s = {
-            "\5\2\5\uffff\1\2\2\uffff\1\2\2\uffff\1\1\10\uffff\1\2\14\uffff\1\2\2\uffff\2\2\4\uffff\1\2\6\uffff\2\2\3\uffff\1\2\1\uffff\1\2\2\uffff\3\2\2\uffff\14\2\1\uffff\1\2",
+            "\5\2\5\uffff\1\2\5\uffff\1\1\10\uffff\1\2\14\uffff\1\2\2\uffff\2\2\4\uffff\1\2\6\uffff\2\2\3\uffff\1\2\1\uffff\1\2\2\uffff\3\2\2\uffff\15\2\1\uffff\1\2",
             "\1\uffff",
             "",
             "",
@@ -22396,11 +22397,11 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
     }
     static final String dfa_52s = "\42\uffff";
     static final String dfa_53s = "\1\4\2\0\37\uffff";
-    static final String dfa_54s = "\1\126\2\0\37\uffff";
+    static final String dfa_54s = "\1\127\2\0\37\uffff";
     static final String dfa_55s = "\3\uffff\1\1\1\2\35\uffff";
     static final String dfa_56s = "\1\0\1\1\1\2\37\uffff}>";
     static final String[] dfa_57s = {
-            "\4\4\1\1\5\uffff\1\4\2\uffff\1\4\2\uffff\1\2\10\uffff\1\4\14\uffff\1\3\2\uffff\2\4\4\uffff\1\4\6\uffff\2\4\3\uffff\1\4\1\uffff\1\4\2\uffff\3\4\2\uffff\14\4\1\uffff\1\4",
+            "\4\4\1\1\5\uffff\1\4\5\uffff\1\2\10\uffff\1\4\14\uffff\1\3\2\uffff\2\4\4\uffff\1\4\6\uffff\2\4\3\uffff\1\4\1\uffff\1\4\2\uffff\3\4\2\uffff\15\4\1\uffff\1\4",
             "\1\uffff",
             "\1\uffff",
             "",
@@ -22476,7 +22477,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
 
                         else if ( (LA57_0==42) && (synpred27_InternalQuan6())) {s = 3;}
 
-                        else if ( ((LA57_0>=RULE_STRING && LA57_0<=RULE_DECIMAL)||LA57_0==14||LA57_0==17||LA57_0==29||(LA57_0>=45 && LA57_0<=46)||LA57_0==51||(LA57_0>=58 && LA57_0<=59)||LA57_0==63||LA57_0==65||(LA57_0>=68 && LA57_0<=70)||(LA57_0>=73 && LA57_0<=84)||LA57_0==86) ) {s = 4;}
+                        else if ( ((LA57_0>=RULE_STRING && LA57_0<=RULE_DECIMAL)||LA57_0==14||LA57_0==29||(LA57_0>=45 && LA57_0<=46)||LA57_0==51||(LA57_0>=58 && LA57_0<=59)||LA57_0==63||LA57_0==65||(LA57_0>=68 && LA57_0<=70)||(LA57_0>=73 && LA57_0<=85)||LA57_0==87) ) {s = 4;}
 
                          
                         input.seek(index57_0);
@@ -22600,7 +22601,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
 
                         else if ( (LA79_0==61) && (synpred31_InternalQuan6())) {s = 4;}
 
-                        else if ( ((LA79_0>=RULE_STRING && LA79_0<=RULE_DECIMAL)||LA79_0==14||LA79_0==17||LA79_0==29||(LA79_0>=45 && LA79_0<=46)||LA79_0==51||(LA79_0>=58 && LA79_0<=59)||LA79_0==63||LA79_0==65||(LA79_0>=68 && LA79_0<=70)||(LA79_0>=73 && LA79_0<=84)||LA79_0==86) ) {s = 5;}
+                        else if ( ((LA79_0>=RULE_STRING && LA79_0<=RULE_DECIMAL)||LA79_0==14||LA79_0==29||(LA79_0>=45 && LA79_0<=46)||LA79_0==51||(LA79_0>=58 && LA79_0<=59)||LA79_0==63||LA79_0==65||(LA79_0>=68 && LA79_0<=70)||(LA79_0>=73 && LA79_0<=85)||LA79_0==87) ) {s = 5;}
 
                         else if ( (LA79_0==22) ) {s = 35;}
 
@@ -22691,7 +22692,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
         }
     }
     static final String[] dfa_58s = {
-            "\5\2\5\uffff\2\2\1\uffff\2\2\1\uffff\3\2\1\uffff\5\2\1\1\37\2\1\uffff\32\2",
+            "\5\2\5\uffff\2\2\2\uffff\1\2\1\uffff\3\2\1\uffff\5\2\1\1\37\2\1\uffff\33\2",
             "\1\uffff",
             "",
             "",
@@ -22895,7 +22896,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
 
                         else if ( (LA87_0==61) && (synpred35_InternalQuan6())) {s = 4;}
 
-                        else if ( ((LA87_0>=RULE_STRING && LA87_0<=RULE_DECIMAL)||LA87_0==14||LA87_0==17||LA87_0==29||(LA87_0>=45 && LA87_0<=46)||LA87_0==51||(LA87_0>=58 && LA87_0<=59)||LA87_0==63||LA87_0==65||(LA87_0>=68 && LA87_0<=70)||(LA87_0>=73 && LA87_0<=84)||LA87_0==86) ) {s = 5;}
+                        else if ( ((LA87_0>=RULE_STRING && LA87_0<=RULE_DECIMAL)||LA87_0==14||LA87_0==29||(LA87_0>=45 && LA87_0<=46)||LA87_0==51||(LA87_0>=58 && LA87_0<=59)||LA87_0==63||LA87_0==65||(LA87_0>=68 && LA87_0<=70)||(LA87_0>=73 && LA87_0<=85)||LA87_0==87) ) {s = 5;}
 
                         else if ( (LA87_0==22) ) {s = 35;}
 
@@ -22987,11 +22988,11 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
     }
     static final String dfa_59s = "\1\41\115\uffff";
     static final String dfa_60s = "\1\4\40\0\55\uffff";
-    static final String dfa_61s = "\1\127\40\0\55\uffff";
+    static final String dfa_61s = "\1\130\40\0\55\uffff";
     static final String dfa_62s = "\41\uffff\1\2\53\uffff\1\1";
     static final String dfa_63s = "\1\uffff\1\0\1\1\1\2\1\3\1\4\1\5\1\6\1\7\1\10\1\11\1\12\1\13\1\14\1\15\1\16\1\17\1\20\1\21\1\22\1\23\1\24\1\25\1\26\1\27\1\30\1\31\1\32\1\33\1\34\1\35\1\36\1\37\55\uffff}>";
     static final String[] dfa_64s = {
-            "\1\27\1\23\1\24\1\25\1\1\5\uffff\1\12\1\41\1\uffff\1\2\1\41\1\uffff\1\40\2\41\1\uffff\5\41\1\15\17\41\1\10\1\7\4\41\1\6\6\41\1\17\1\20\1\41\1\uffff\1\41\1\31\1\41\1\13\2\41\1\32\1\33\1\34\2\41\1\3\1\4\1\5\1\16\1\11\1\21\1\22\1\26\1\30\1\35\1\36\1\37\1\41\1\14\1\41",
+            "\1\27\1\23\1\24\1\25\1\1\5\uffff\1\12\1\41\2\uffff\1\41\1\uffff\1\40\2\41\1\uffff\5\41\1\15\17\41\1\10\1\7\4\41\1\6\6\41\1\17\1\20\1\41\1\uffff\1\41\1\31\1\41\1\13\2\41\1\32\1\33\1\34\2\41\1\2\1\3\1\4\1\5\1\16\1\11\1\21\1\22\1\26\1\30\1\35\1\36\1\37\1\41\1\14\1\41",
             "\1\uffff",
             "\1\uffff",
             "\1\uffff",
@@ -23588,11 +23589,11 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
     static final String dfa_65s = "\120\uffff";
     static final String dfa_66s = "\1\2\117\uffff";
     static final String dfa_67s = "\1\4\1\0\116\uffff";
-    static final String dfa_68s = "\1\131\1\0\116\uffff";
+    static final String dfa_68s = "\1\132\1\0\116\uffff";
     static final String dfa_69s = "\2\uffff\1\2\114\uffff\1\1";
     static final String dfa_70s = "\1\uffff\1\0\116\uffff}>";
     static final String[] dfa_71s = {
-            "\5\2\5\uffff\2\2\1\uffff\6\2\1\uffff\5\2\1\1\37\2\1\uffff\32\2\1\uffff\1\2",
+            "\5\2\5\uffff\2\2\2\uffff\5\2\1\uffff\5\2\1\1\37\2\1\uffff\33\2\1\uffff\1\2",
             "\1\uffff",
             "",
             "",
@@ -23772,16 +23773,16 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
     static final String dfa_72s = "\7\uffff";
     static final String dfa_73s = "\2\uffff\1\4\2\uffff\1\4\1\uffff";
     static final String dfa_74s = "\1\10\1\uffff\1\15\1\10\1\uffff\1\15\1\uffff";
-    static final String dfa_75s = "\1\111\1\uffff\1\112\1\57\1\uffff\1\112\1\uffff";
+    static final String dfa_75s = "\1\112\1\uffff\1\113\1\57\1\uffff\1\113\1\uffff";
     static final String dfa_76s = "\1\uffff\1\1\2\uffff\1\2\1\uffff\1\3";
     static final String dfa_77s = "\7\uffff}>";
     static final String[] dfa_78s = {
-            "\1\2\100\uffff\1\1",
+            "\1\2\101\uffff\1\1",
             "",
-            "\1\4\2\uffff\1\4\46\uffff\1\3\6\uffff\1\4\13\uffff\1\4",
+            "\1\4\2\uffff\1\4\46\uffff\1\3\6\uffff\1\4\14\uffff\1\4",
             "\1\5\46\uffff\1\6",
             "",
-            "\1\4\2\uffff\1\4\46\uffff\1\3\6\uffff\1\4\13\uffff\1\4",
+            "\1\4\2\uffff\1\4\46\uffff\1\3\6\uffff\1\4\14\uffff\1\4",
             ""
     };
 
@@ -23826,7 +23827,7 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x0000040000500100L});
     public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0000000000600000L});
     public static final BitSet FOLLOW_14 = new BitSet(new long[]{0x0000000000800000L});
-    public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x8C086000201241F0L,0x00000000005FFE72L});
+    public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x8C086000201041F0L,0x0000000000BFFE72L});
     public static final BitSet FOLLOW_16 = new BitSet(new long[]{0x000000007F000002L});
     public static final BitSet FOLLOW_17 = new BitSet(new long[]{0x0000000020000000L});
     public static final BitSet FOLLOW_18 = new BitSet(new long[]{0x00000000C0000000L});
@@ -23844,60 +23845,60 @@ public class InternalQuan6Parser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_30 = new BitSet(new long[]{0x0010000000000002L});
     public static final BitSet FOLLOW_31 = new BitSet(new long[]{0x0060000000000002L});
     public static final BitSet FOLLOW_32 = new BitSet(new long[]{0x0380000000000002L});
-    public static final BitSet FOLLOW_33 = new BitSet(new long[]{0x0000000000020100L,0x0000000000000E00L});
-    public static final BitSet FOLLOW_34 = new BitSet(new long[]{0x0000000020020100L,0x0000000000001E00L});
-    public static final BitSet FOLLOW_35 = new BitSet(new long[]{0x0000040000100100L,0x0000000001000000L});
+    public static final BitSet FOLLOW_33 = new BitSet(new long[]{0x0000000000000100L,0x0000000000001E00L});
+    public static final BitSet FOLLOW_34 = new BitSet(new long[]{0x0000000020000100L,0x0000000000003E00L});
+    public static final BitSet FOLLOW_35 = new BitSet(new long[]{0x0000040000100100L,0x0000000002000000L});
     public static final BitSet FOLLOW_36 = new BitSet(new long[]{0x0000000040200000L});
     public static final BitSet FOLLOW_37 = new BitSet(new long[]{0x0B80000000100002L});
-    public static final BitSet FOLLOW_38 = new BitSet(new long[]{0xAC086400205241F0L,0x00000000005FFE72L});
+    public static final BitSet FOLLOW_38 = new BitSet(new long[]{0xAC086400205041F0L,0x0000000000BFFE72L});
     public static final BitSet FOLLOW_39 = new BitSet(new long[]{0x0000000000400000L});
     public static final BitSet FOLLOW_40 = new BitSet(new long[]{0x0B80000000000002L});
-    public static final BitSet FOLLOW_41 = new BitSet(new long[]{0x8C0860002012C1F0L,0x00000000005FFE72L});
+    public static final BitSet FOLLOW_41 = new BitSet(new long[]{0x8C0860002010C1F0L,0x0000000000BFFE72L});
     public static final BitSet FOLLOW_42 = new BitSet(new long[]{0x0000000000208000L});
     public static final BitSet FOLLOW_43 = new BitSet(new long[]{0x0800000000000000L});
-    public static final BitSet FOLLOW_44 = new BitSet(new long[]{0x9C086000201241F0L,0x00000000005FFE72L});
+    public static final BitSet FOLLOW_44 = new BitSet(new long[]{0x9C086000201041F0L,0x0000000000BFFE72L});
     public static final BitSet FOLLOW_45 = new BitSet(new long[]{0x1000000000200000L});
-    public static final BitSet FOLLOW_46 = new BitSet(new long[]{0xBC086400201241F0L,0x00000000005FFFF2L});
+    public static final BitSet FOLLOW_46 = new BitSet(new long[]{0xBC086400201041F0L,0x0000000000BFFFF2L});
     public static final BitSet FOLLOW_47 = new BitSet(new long[]{0x2000000000200000L});
-    public static final BitSet FOLLOW_48 = new BitSet(new long[]{0x9C086000201241F0L,0x00000000005FFFF2L});
+    public static final BitSet FOLLOW_48 = new BitSet(new long[]{0x9C086000201041F0L,0x0000000000BFFFF2L});
     public static final BitSet FOLLOW_49 = new BitSet(new long[]{0x1000000000000000L});
-    public static final BitSet FOLLOW_50 = new BitSet(new long[]{0xCC086000201241F2L,0x00000000005FFFF2L});
-    public static final BitSet FOLLOW_51 = new BitSet(new long[]{0x8C086000201241F2L,0x00000000005FFFF2L});
+    public static final BitSet FOLLOW_50 = new BitSet(new long[]{0xCC086000201041F2L,0x0000000000BFFFF2L});
+    public static final BitSet FOLLOW_51 = new BitSet(new long[]{0x8C086000201041F2L,0x0000000000BFFFF2L});
     public static final BitSet FOLLOW_52 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000001L});
-    public static final BitSet FOLLOW_53 = new BitSet(new long[]{0x8C086400201241F0L,0x00000000005FFE72L});
+    public static final BitSet FOLLOW_53 = new BitSet(new long[]{0x8C086400201041F0L,0x0000000000BFFE72L});
     public static final BitSet FOLLOW_54 = new BitSet(new long[]{0x0000040000348100L,0x000000000000000CL});
     public static final BitSet FOLLOW_55 = new BitSet(new long[]{0x0000000000008000L});
     public static final BitSet FOLLOW_56 = new BitSet(new long[]{0x0000000000240000L,0x0000000000000008L});
     public static final BitSet FOLLOW_57 = new BitSet(new long[]{0x0000000000240000L});
-    public static final BitSet FOLLOW_58 = new BitSet(new long[]{0xCC086000201241F0L,0x00000000005FFFF2L});
+    public static final BitSet FOLLOW_58 = new BitSet(new long[]{0xCC086000201041F0L,0x0000000000BFFFF2L});
     public static final BitSet FOLLOW_59 = new BitSet(new long[]{0x4000000000200000L});
-    public static final BitSet FOLLOW_60 = new BitSet(new long[]{0x8C086000201241F0L,0x00000000005FFFF2L});
-    public static final BitSet FOLLOW_61 = new BitSet(new long[]{0xCC086000201241F0L,0x00000000005FFE72L});
+    public static final BitSet FOLLOW_60 = new BitSet(new long[]{0x8C086000201041F0L,0x0000000000BFFFF2L});
+    public static final BitSet FOLLOW_61 = new BitSet(new long[]{0xCC086000201041F0L,0x0000000000BFFE72L});
     public static final BitSet FOLLOW_62 = new BitSet(new long[]{0x4000000000000000L});
-    public static final BitSet FOLLOW_63 = new BitSet(new long[]{0x8C086000205241F0L,0x00000000005FFE72L});
+    public static final BitSet FOLLOW_63 = new BitSet(new long[]{0x8C086000205041F0L,0x0000000000BFFE72L});
     public static final BitSet FOLLOW_64 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000020L});
-    public static final BitSet FOLLOW_65 = new BitSet(new long[]{0x8C0860002012C1F0L,0x00000000005FFFF2L});
-    public static final BitSet FOLLOW_66 = new BitSet(new long[]{0xCC0860002012C1F0L,0x00000000005FFFF2L});
+    public static final BitSet FOLLOW_65 = new BitSet(new long[]{0x8C0860002010C1F0L,0x0000000000BFFFF2L});
+    public static final BitSet FOLLOW_66 = new BitSet(new long[]{0xCC0860002010C1F0L,0x0000000000BFFFF2L});
     public static final BitSet FOLLOW_67 = new BitSet(new long[]{0x0000000000800002L});
     public static final BitSet FOLLOW_68 = new BitSet(new long[]{0x0800000000100002L});
     public static final BitSet FOLLOW_69 = new BitSet(new long[]{0x0800000000000002L});
     public static final BitSet FOLLOW_70 = new BitSet(new long[]{0x0800000020100002L});
     public static final BitSet FOLLOW_71 = new BitSet(new long[]{0x0800000000400000L});
-    public static final BitSet FOLLOW_72 = new BitSet(new long[]{0x8C086000201241F2L,0x00000000005FFE72L});
-    public static final BitSet FOLLOW_73 = new BitSet(new long[]{0x0000000000000000L,0x0000000000A00000L});
-    public static final BitSet FOLLOW_74 = new BitSet(new long[]{0x0000000000000002L,0x0000000000A00000L});
+    public static final BitSet FOLLOW_72 = new BitSet(new long[]{0x8C086000201041F2L,0x0000000000BFFE72L});
+    public static final BitSet FOLLOW_73 = new BitSet(new long[]{0x0000000000000000L,0x0000000001400000L});
+    public static final BitSet FOLLOW_74 = new BitSet(new long[]{0x0000000000000002L,0x0000000001400000L});
     public static final BitSet FOLLOW_75 = new BitSet(new long[]{0x0080000000000002L});
     public static final BitSet FOLLOW_76 = new BitSet(new long[]{0x00000000000000C0L});
     public static final BitSet FOLLOW_77 = new BitSet(new long[]{0x0000040000000000L});
     public static final BitSet FOLLOW_78 = new BitSet(new long[]{0x0000000020000002L});
     public static final BitSet FOLLOW_79 = new BitSet(new long[]{0x0080000020000002L});
-    public static final BitSet FOLLOW_80 = new BitSet(new long[]{0x0000000000020002L,0x0000000000001000L});
-    public static final BitSet FOLLOW_81 = new BitSet(new long[]{0x0000000000000002L,0x0000000002000000L});
+    public static final BitSet FOLLOW_80 = new BitSet(new long[]{0x0000000000000002L,0x0000000000002200L});
+    public static final BitSet FOLLOW_81 = new BitSet(new long[]{0x0000000000000002L,0x0000000004000000L});
     public static final BitSet FOLLOW_82 = new BitSet(new long[]{0x0080000000000000L});
     public static final BitSet FOLLOW_83 = new BitSet(new long[]{0x0000800000000000L});
-    public static final BitSet FOLLOW_84 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000400L});
-    public static final BitSet FOLLOW_85 = new BitSet(new long[]{0x0000000000000100L,0x0000000000000200L});
-    public static final BitSet FOLLOW_86 = new BitSet(new long[]{0x0000000000000100L,0x0000000000000800L});
+    public static final BitSet FOLLOW_84 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000800L});
+    public static final BitSet FOLLOW_85 = new BitSet(new long[]{0x0000000000000100L,0x0000000000000400L});
+    public static final BitSet FOLLOW_86 = new BitSet(new long[]{0x0000000000000100L,0x0000000000001000L});
     public static final BitSet FOLLOW_87 = new BitSet(new long[]{0x0000800000000100L});
     public static final BitSet FOLLOW_88 = new BitSet(new long[]{0x4000000000000002L});
     public static final BitSet FOLLOW_89 = new BitSet(new long[]{0x0000000000000102L});

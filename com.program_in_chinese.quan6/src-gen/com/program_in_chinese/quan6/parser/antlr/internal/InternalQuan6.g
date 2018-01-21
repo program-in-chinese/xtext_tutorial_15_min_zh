@@ -169,9 +169,9 @@ rulePackageDeclaration returns [EObject current=null]
 	leaveRule();
 }:
 	(
-		otherlv_0='package'
+		otherlv_0='\u5305'
 		{
-			newLeafNode(otherlv_0, grammarAccess.getPackageDeclarationAccess().getPackageKeyword_0());
+			newLeafNode(otherlv_0, grammarAccess.getPackageDeclarationAccess().getCjkUnifiedIdeograph5305Keyword_0());
 		}
 		(
 			(
@@ -238,9 +238,9 @@ ruleEntity returns [EObject current=null]
 	leaveRule();
 }:
 	(
-		otherlv_0='entity'
+		otherlv_0='\u7C7B'
 		{
-			newLeafNode(otherlv_0, grammarAccess.getEntityAccess().getEntityKeyword_0());
+			newLeafNode(otherlv_0, grammarAccess.getEntityAccess().getCjkUnifiedIdeograph7c7bKeyword_0());
 		}
 		(
 			(
@@ -262,9 +262,9 @@ ruleEntity returns [EObject current=null]
 			)
 		)
 		(
-			otherlv_2='extends'
+			otherlv_2='\u6269\u5C55'
 			{
-				newLeafNode(otherlv_2, grammarAccess.getEntityAccess().getExtendsKeyword_2_0());
+				newLeafNode(otherlv_2, grammarAccess.getEntityAccess().getCjkUnifiedIdeograph6269CjkUnifiedIdeograph5c55Keyword_2_0());
 			}
 			(
 				(
@@ -429,9 +429,9 @@ ruleOperation returns [EObject current=null]
 	leaveRule();
 }:
 	(
-		otherlv_0='op'
+		otherlv_0='\u51FD\u6570'
 		{
-			newLeafNode(otherlv_0, grammarAccess.getOperationAccess().getOpKeyword_0());
+			newLeafNode(otherlv_0, grammarAccess.getOperationAccess().getCjkUnifiedIdeograph51fdCjkUnifiedIdeograph6570Keyword_0());
 		}
 		(
 			(

@@ -10,12 +10,12 @@ AbstractElement:
     PackageDeclaration | Entity;
  
 PackageDeclaration:
-    'package' name=QualifiedName '{'
+    '包' name=QualifiedName '{'
         elements+=AbstractElement*
     '}';
  
 Entity:
-    'entity' name=ValidID ('extends' superType=JvmTypeReference)? '{'
+    '类' name=ValidID ('扩展' superType=JvmTypeReference)? '{'
         features+=Feature*
     '}';
  
@@ -26,7 +26,7 @@ Property:
     name=ValidID ':' type=JvmTypeReference;
  
 Operation:
-    'op' name=ValidID 
+    '函数' name=ValidID 
         '('(params+=FullJvmFormalParameter 
         (',' params+=FullJvmFormalParameter)*)?')'
         ':' type=JvmTypeReference 

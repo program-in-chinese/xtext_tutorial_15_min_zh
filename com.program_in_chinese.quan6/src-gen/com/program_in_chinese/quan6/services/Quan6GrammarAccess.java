@@ -73,7 +73,7 @@ public class Quan6GrammarAccess extends AbstractGrammarElementFinder {
 	public class PackageDeclarationElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "com.program_in_chinese.quan6.Quan6.PackageDeclaration");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cPackageKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Keyword cCjkUnifiedIdeograph5305Keyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cNameQualifiedNameParserRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
 		private final Keyword cLeftCurlyBracketKeyword_2 = (Keyword)cGroup.eContents().get(2);
@@ -82,16 +82,16 @@ public class Quan6GrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cRightCurlyBracketKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		
 		//PackageDeclaration:
-		//	'package' name=QualifiedName '{'
+		//	'包' name=QualifiedName '{'
 		//	elements+=AbstractElement*
 		//	'}';
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'package' name=QualifiedName '{' elements+=AbstractElement* '}'
+		//'包' name=QualifiedName '{' elements+=AbstractElement* '}'
 		public Group getGroup() { return cGroup; }
 		
-		//'package'
-		public Keyword getPackageKeyword_0() { return cPackageKeyword_0; }
+		//'包'
+		public Keyword getCjkUnifiedIdeograph5305Keyword_0() { return cCjkUnifiedIdeograph5305Keyword_0; }
 		
 		//name=QualifiedName
 		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
@@ -114,11 +114,11 @@ public class Quan6GrammarAccess extends AbstractGrammarElementFinder {
 	public class EntityElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "com.program_in_chinese.quan6.Quan6.Entity");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cEntityKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Keyword cCjkUnifiedIdeograph7c7bKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cNameValidIDParserRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
 		private final Group cGroup_2 = (Group)cGroup.eContents().get(2);
-		private final Keyword cExtendsKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
+		private final Keyword cCjkUnifiedIdeograph6269CjkUnifiedIdeograph5c55Keyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
 		private final Assignment cSuperTypeAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
 		private final RuleCall cSuperTypeJvmTypeReferenceParserRuleCall_2_1_0 = (RuleCall)cSuperTypeAssignment_2_1.eContents().get(0);
 		private final Keyword cLeftCurlyBracketKeyword_3 = (Keyword)cGroup.eContents().get(3);
@@ -127,16 +127,16 @@ public class Quan6GrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cRightCurlyBracketKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		
 		//Entity:
-		//	'entity' name=ValidID ('extends' superType=JvmTypeReference)? '{'
+		//	'类' name=ValidID ('扩展' superType=JvmTypeReference)? '{'
 		//	features+=Feature*
 		//	'}';
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'entity' name=ValidID ('extends' superType=JvmTypeReference)? '{' features+=Feature* '}'
+		//'类' name=ValidID ('扩展' superType=JvmTypeReference)? '{' features+=Feature* '}'
 		public Group getGroup() { return cGroup; }
 		
-		//'entity'
-		public Keyword getEntityKeyword_0() { return cEntityKeyword_0; }
+		//'类'
+		public Keyword getCjkUnifiedIdeograph7c7bKeyword_0() { return cCjkUnifiedIdeograph7c7bKeyword_0; }
 		
 		//name=ValidID
 		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
@@ -144,11 +144,11 @@ public class Quan6GrammarAccess extends AbstractGrammarElementFinder {
 		//ValidID
 		public RuleCall getNameValidIDParserRuleCall_1_0() { return cNameValidIDParserRuleCall_1_0; }
 		
-		//('extends' superType=JvmTypeReference)?
+		//('扩展' superType=JvmTypeReference)?
 		public Group getGroup_2() { return cGroup_2; }
 		
-		//'extends'
-		public Keyword getExtendsKeyword_2_0() { return cExtendsKeyword_2_0; }
+		//'扩展'
+		public Keyword getCjkUnifiedIdeograph6269CjkUnifiedIdeograph5c55Keyword_2_0() { return cCjkUnifiedIdeograph6269CjkUnifiedIdeograph5c55Keyword_2_0; }
 		
 		//superType=JvmTypeReference
 		public Assignment getSuperTypeAssignment_2_1() { return cSuperTypeAssignment_2_1; }
@@ -221,7 +221,7 @@ public class Quan6GrammarAccess extends AbstractGrammarElementFinder {
 	public class OperationElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "com.program_in_chinese.quan6.Quan6.Operation");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cOpKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Keyword cCjkUnifiedIdeograph51fdCjkUnifiedIdeograph6570Keyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cNameValidIDParserRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
 		private final Keyword cLeftParenthesisKeyword_2 = (Keyword)cGroup.eContents().get(2);
@@ -240,18 +240,18 @@ public class Quan6GrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cBodyXBlockExpressionParserRuleCall_7_0 = (RuleCall)cBodyAssignment_7.eContents().get(0);
 		
 		//Operation:
-		//	'op' name=ValidID
+		//	'函数' name=ValidID
 		//	'(' (params+=FullJvmFormalParameter (',' params+=FullJvmFormalParameter)*)? ')'
 		//	':' type=JvmTypeReference
 		//	body=XBlockExpression;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'op' name=ValidID '(' (params+=FullJvmFormalParameter (',' params+=FullJvmFormalParameter)*)? ')' ':'
+		//'函数' name=ValidID '(' (params+=FullJvmFormalParameter (',' params+=FullJvmFormalParameter)*)? ')' ':'
 		//type=JvmTypeReference body=XBlockExpression
 		public Group getGroup() { return cGroup; }
 		
-		//'op'
-		public Keyword getOpKeyword_0() { return cOpKeyword_0; }
+		//'函数'
+		public Keyword getCjkUnifiedIdeograph51fdCjkUnifiedIdeograph6570Keyword_0() { return cCjkUnifiedIdeograph51fdCjkUnifiedIdeograph6570Keyword_0; }
 		
 		//name=ValidID
 		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
@@ -386,7 +386,7 @@ public class Quan6GrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//PackageDeclaration:
-	//	'package' name=QualifiedName '{'
+	//	'包' name=QualifiedName '{'
 	//	elements+=AbstractElement*
 	//	'}';
 	public PackageDeclarationElements getPackageDeclarationAccess() {
@@ -398,7 +398,7 @@ public class Quan6GrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//Entity:
-	//	'entity' name=ValidID ('extends' superType=JvmTypeReference)? '{'
+	//	'类' name=ValidID ('扩展' superType=JvmTypeReference)? '{'
 	//	features+=Feature*
 	//	'}';
 	public EntityElements getEntityAccess() {
@@ -430,7 +430,7 @@ public class Quan6GrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//Operation:
-	//	'op' name=ValidID
+	//	'函数' name=ValidID
 	//	'(' (params+=FullJvmFormalParameter (',' params+=FullJvmFormalParameter)*)? ')'
 	//	':' type=JvmTypeReference
 	//	body=XBlockExpression;
