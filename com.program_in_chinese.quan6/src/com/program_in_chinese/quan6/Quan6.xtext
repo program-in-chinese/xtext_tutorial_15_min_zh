@@ -1,10 +1,9 @@
-grammar com.program_in_chinese.quan6.Quan6 with
-                                      org.eclipse.xtext.xbase.Xbase
+grammar com.program_in_chinese.quan6.Quan6 with org.eclipse.xtext.xbase.Xbase
 
 generate quan6 "http://www.program_in_chinese.com/quan6/Quan6"
 
 Quan6:
-    importSection=XImportSection?
+	importSection=XImportSection?
     elements+=AbstractElement*;
  
 AbstractElement:
