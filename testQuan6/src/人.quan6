@@ -1,0 +1,23 @@
+import java.util.List
+
+包 个人.模型 {
+    类 人 {
+        姓: String
+        名: String
+        朋友: List<人>
+        地址 : 地址
+        函数 get全名() : String {
+            return 姓 + 名;
+        }
+        
+        函数 get按姓名排序的朋友() : List<人> {
+            return 朋友.sortBy[ 友 | 友.全名 ]
+        }
+    }
+    
+    类 地址 {
+        街道: String
+        邮编: String
+        城市: String
+    }
+}
